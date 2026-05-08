@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dawn-Breakers — Chapter 6 Study Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.75; color: #1a1a1a; background: #faf8f4; padding: 0 0 60px 0; }
+  .book-header { background: linear-gradient(135deg, #0f2a1a 0%, #1a3d2b 60%, #0f2a1a 100%); color: #f5f0e8; text-align: center; padding: 48px 24px 40px; border-bottom: 4px solid #c9a84c; }
+  .book-header .series-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c; margin-bottom: 10px; }
+  .book-header h1 { font-size: 2.2rem; font-weight: normal; letter-spacing: 1px; color: #f5f0e8; margin-bottom: 6px; }
+  .book-header .chapter-title { font-size: 1.1rem; color: #c9a84c; font-style: italic; margin-top: 10px; }
+  .page { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .section-header { margin: 48px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #c9a84c; display: flex; align-items: center; gap: 12px; }
+  .section-header .icon { font-size: 1.4rem; }
+  .section-header h2 { font-size: 1.3rem; font-weight: bold; color: #0f2a1a; letter-spacing: 0.5px; text-transform: uppercase; }
+  .summary-box { background: #f0ede6; border-left: 5px solid #c9a84c; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 16px 0; font-size: 16px; line-height: 1.8; color: #2a2a2a; }
+  .character-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 16px 0; }
+  .character-card { background: white; border-radius: 10px; padding: 16px 18px; border-left: 5px solid; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .character-card .char-name { font-weight: bold; font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .character-card .char-desc { font-size: 14px; color: #444; line-height: 1.65; font-family: Arial, sans-serif; }
+  .vocab-legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 24px; }
+  .vocab-legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #333; font-family: Arial, sans-serif; }
+  .legend-chip { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+  .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin: 12px 0; }
+  .vocab-entry { background: white; border-radius: 8px; padding: 12px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); display: flex; gap: 12px; align-items: flex-start; }
+  .vocab-chip { display: inline-block; padding: 3px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; white-space: nowrap; flex-shrink: 0; font-family: Arial, sans-serif; margin-top: 1px; border: 1px solid rgba(0,0,0,0.12); }
+  .vocab-def { font-size: 14px; color: #444; line-height: 1.6; font-family: Arial, sans-serif; }
+  .story-section { margin: 40px 0; }
+  .story-section-header { background: #1a3d2b; color: white; border-radius: 8px 8px 0 0; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .story-section-header h3 { font-size: 1rem; font-weight: bold; }
+  .story-section-header .para-ref { font-size: 12px; color: #c9a84c; white-space: nowrap; font-family: Arial, sans-serif; }
+  .story-summary { background: #e8f4ed; border-left: 4px solid #1a3d2b; padding: 14px 20px; font-size: 15px; line-height: 1.75; color: #1a3a24; font-family: Arial, sans-serif; }
+  .story-text { background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; padding: 24px 28px; font-size: 16px; line-height: 1.9; color: #1a1a1a; }
+  .story-text p { margin-bottom: 1.4em; }
+  .story-text p:last-child { margin-bottom: 0; }
+  .cn { font-weight: 700; }
+  .ci { font-style: normal; font-size: 0.85em; margin-right: 1px; display: inline; }
+  .vw { border-radius: 3px; padding: 1px 3px; font-style: italic; }
+  .lot-badge { display: inline-block; font-size: 10px; font-family: Arial, sans-serif; font-weight: bold; color: #7a4f00; background: #fde68a; border: 1px solid #f0a500; border-radius: 8px; padding: 0px 5px; margin-left: 3px; vertical-align: super; line-height: 1.6; letter-spacing: 0.3px; }
+  /* Vocab */
+  .cat-a  { color: #166534; background: #DCFCE7; }
+  .cat-b  { color: #1E3A5F; background: #DBEAFE; }
+  .cat-c  { color: #92400E; background: #FEF3C7; }
+  .cat-d  { color: #7C2D12; background: #FFEDD5; }
+  .cat-e  { color: #6B21A8; background: #F3E8FF; }
+  .cat-ab { color: #1A5276; background: #D6EAF8; }
+  .cat-ac { color: #1E8449; background: #D5F5E3; }
+  .cat-ad { color: #6E2F1A; background: #FDEBD0; }
+  .cat-ae { color: #4A235A; background: #E8DAEF; }
+  .cat-bc { color: #1A3A6B; background: #D6EAF8; }
+  /* Characters */
+  .ch-husayn   { color: #1565C0; }
+  .ch-bab      { color: #B8860B; }
+  .ch-bahaullah{ color: #AD1457; }
+  .ch-quddus   { color: #00838F; }
+  .ch-azim     { color: #455A64; }
+  .ch-baqir-q  { color: #1B5E20; }
+  [data-tip] { position: relative; cursor: help; }
+  [data-tip]::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 13px; font-family: Arial, sans-serif; padding: 6px 10px; border-radius: 6px; white-space: normal; width: 240px; text-align: center; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity 0.15s; z-index: 100; font-weight: normal; font-style: normal; }
+  [data-tip]:hover::after { opacity: 1; }
+  .guide-footer { text-align: center; margin-top: 60px; padding: 24px; border-top: 1px solid #ccc; color: #888; font-size: 13px; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="book-header">
+  <div class="series-label">Youth Study Guide</div>
+  <h1>The Dawn-Breakers</h1>
+  <div class="chapter-title">Chapter VI: Mullá Ḥusayn's Journey to Khurásán</div>
+</div>
+
+<div class="page">
+
+<!-- SUMMARY -->
+<div class="section-header"><span class="icon">📖</span><h2>Chapter Summary</h2></div>
+<div class="summary-box">
+  A short but quietly significant chapter. Before the Letters of the Living scattered, the Báb gave them detailed instructions for tracking new believers and reporting to Him. Mullá Ḥusayn then travels to Khurásán — the northeastern province of Persia — and wins over some of the most learned religious figures in the region. The most important of these is Mírzá Muḥammad-Báqir-i-Qá'iní, who opens his home to Mullá Ḥusayn, organises meetings, and will later die leading the defenders of Fort Shaykh Ṭabarsí. When Mullá Ḥusayn's report reaches the Báb on a sacred night in Ramadán, the joy on the Báb's face — as He reads passages aloud to Quddús — is something the Báb's uncle cannot describe. The chapter closes with Nabíl reflecting on the Báb's confidence that Bahá'u'lláh's hand would steer the Cause even if the Báb Himself were to perish.
+</div>
+
+<!-- CHARACTERS -->
+<div class="section-header"><span class="icon">👥</span><h2>Characters</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:16px;">Each character's name and icon appear in their color throughout this guide and in the story text below.</p>
+<div class="character-grid">
+
+  <div class="character-card" style="border-color:#1565C0;">
+    <div class="char-name" style="color:#1565C0;"><span>🕊️</span> Mullá Ḥusayn-i-Bushrú'í <span class="lot-badge">L1</span></div>
+    <div class="char-desc">Refreshed from his encounter with Bahá'u'lláh, Mullá Ḥusayn travels to Khurásán and preaches with electrifying effect. He wins over the most eminent religious scholars of the province and sends a detailed report back to the Báb — a letter that arrives on one of the holiest nights of the Islamic year and fills the Báb with visible, overwhelming joy.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#B8860B;">
+    <div class="char-name" style="color:#B8860B;"><span>🌅</span> The Báb</div>
+    <div class="char-desc">Waiting in Shíráz for Mullá Ḥusayn's letter before departing on His pilgrimage. When the letter arrives on a sacred night in Ramadán, the Báb's joy is so radiant and overwhelming that His uncle cannot find words to describe it. The chapter ends with the Báb's profound confidence that Bahá'u'lláh would ensure the Cause would survive and flourish regardless of what happened to Him.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#00838F;">
+    <div class="char-name" style="color:#00838F;"><span>🔥</span> Quddús <span class="lot-badge">L18</span></div>
+    <div class="char-desc">The Báb's only companion on the night Mullá Ḥusayn's letter arrives. The Báb shares portions of the letter with him and explains the reason for his joyful exclamations. Quddús will later command the defense at Fort Shaykh Ṭabarsí and order Mírzá Muḥammad-Báqir-i-Qá'iní to assume leadership after Mullá Ḥusayn's death.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#AD1457;">
+    <div class="char-name" style="color:#AD1457;"><span>⭐</span> Bahá'u'lláh</div>
+    <div class="char-desc">Not present in Khurásán — but His name runs through the chapter. Mullá Ḥusayn's letter describes his encounter with Bahá'u'lláh and the events of Núr. The Báb's reaction to reading about Bahá'u'lláh's response is the source of His greatest joy. The chapter ends with the Báb declaring that even if He were to die, Bahá'u'lláh's hand would steer the Cause to ultimate victory.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#1B5E20;">
+    <div class="char-name" style="color:#1B5E20;"><span>🏹</span> Mírzá Muḥammad-Báqir-i-Qá'iní</div>
+    <div class="char-desc">The most important new believer in this chapter — a man of fearlessness, boundless energy, and deep devotion. He opens his home to Mullá Ḥusayn, personally arranges meetings between him and the leading scholars of Mashhad, and removes every obstacle he can. He continues this tireless service until he is martyred at Fort Shaykh Ṭabarsí, where Quddús orders him to assume command of the defenders after Mullá Ḥusayn's death.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#455A64;">
+    <div class="char-name" style="color:#455A64;"><span>🎯</span> Mullá Shaykh 'Alí ('Aẓím)</div>
+    <div class="char-desc">The third person to embrace the Faith in Khurásán, given the surname 'Aẓím by the Báb. He will reappear later in the book — in Chapter 9 he meets Vahid on his way to interview the Báb in Shíráz, and he plays a significant role in later events including the attempt on the life of the Sháh.</div>
+  </div>
+
+</div>
+
+<!-- VOCABULARY -->
+<div class="section-header"><span class="icon">📝</span><h2>Vocabulary</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:14px;">Each word is color-coded by category. The same color appears when the word shows up in the story text. Hover over a highlighted word to see its definition.</p>
+<div class="vocab-legend">
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DCFCE7;border-color:#166534;"></span> Spiritual / Religious</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DBEAFE;border-color:#1E3A5F;"></span> Political / Power</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FEF3C7;border-color:#92400E;"></span> Qualities / Actions</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FFEDD5;border-color:#7C2D12;"></span> Places / Objects / Texts</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#F3E8FF;border-color:#6B21A8;"></span> Social / Religious Roles</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DCFCE7;border-color:#1E8449;"></span> Spiritual + Quality blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FDEBD0;border-color:#6E2F1A;"></span> Sacred Object / Place blend</div>
+</div>
+<div class="vocab-grid">
+  <div class="vocab-entry"><span class="vocab-chip cat-a">Váhid</span><span class="vocab-def">"Unity" in Arabic. Its numerical value in the abjad system is 19. The Báb organized His early believers into groups of 19 called váhids, reflecting the sacred significance of this number in His new system.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-a">Kull-i-Shay'</span><span class="vocab-def">"All things" in Arabic. Its numerical value is 361, which is 19 × 19. The Báb planned to enroll this many believers (plus the original 19 Letters of the Living) as the foundational community of His Revelation.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ad">Abjad notation</span><span class="vocab-def">An ancient system in which Arabic and Persian letters each have a numerical value. Words can therefore carry mathematical meaning — a common feature of Islamic mystical and prophetic literature. The Báb used this system extensively in His writings.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Erudition</span><span class="vocab-def">Deep, extensive learning and scholarship. Mírzá Aḥmad-i-Azghandí's "erudition, his ability and wisdom" had already made him the leading scholar of the province before he embraced the Faith.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Indefatigably</span><span class="vocab-def">Without ever getting tired or giving up; with relentless, unceasing energy. Mírzá Muḥammad-Báqir "continued to labour indefatigably" — he never stopped working for the Cause, right up to his martyrdom.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Fathom</span><span class="vocab-def">To fully understand something deep or mysterious. Mírzá Aḥmad was "determined to fathom" the mystery of the Báb's joyful exclamation — he had to find out what it meant.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ad">Laylatu'l-Qadr</span><span class="vocab-def">"Night of Power" — one of the holiest nights in the Islamic calendar, occurring in the last ten days of Ramadán. It is considered the night on which the Qur'án was first revealed and is described as "better than a thousand months." Mullá Ḥusayn's letter arrives on a night considered close to it in sacredness.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Phoenix-like</span><span class="vocab-def">Welcoming destruction as the means of renewal — rising reborn from the ashes. The Báb, knowing danger was approaching, welcomed it with joy: "Phoenix-like He welcomed with joy the fire of adversity."</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Imminence</span><span class="vocab-def">The quality of something being about to happen very soon. "His fears of the imminence of peril or danger entirely forsook Him" — meaning the Báb no longer feared the dangers that were approaching.</span></div>
+</div>
+
+<!-- STORY SECTIONS -->
+<div class="section-header"><span class="icon">📚</span><h2>Story Sections</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:8px;">The exact text of each paragraph from the book is below. <strong>Character names</strong> appear in their assigned colors with icons. <strong>Vocabulary words</strong> are highlighted — hover to see the definition.</p>
+
+<!-- S1 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 1 — The Báb's Instructions Before Departure</h3><span class="para-ref">Paragraphs 101–102</span></div>
+  <div class="story-summary">As He bid farewell to the Letters of the Living, the Báb gave them a structured system for tracking and reporting new believers — lists of names in sealed letters, organized into groups of 19. He gave Mullá Ḥusayn specific orders to report from Khurásán before the Báb would set out on His pilgrimage to Mecca.</div>
+  <div class="story-text">
+    <p>AS <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> bade farewell to the <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles sent out to carry His message to the world.">Letters of the Living</span>, He instructed them, each and all, to record separately the name of every believer who embraced the Faith and identified himself with its teachings. The list of these believers He bade them enclose in sealed letters, and address them to His maternal uncle, Ḥájí Mírzá Siyyid 'Alí, in Shíráz, who would in turn deliver them to Him. "I shall classify these lists," He told them, "into eighteen sets of nineteen names each. Each set will constitute one <span class="vw cat-a" data-tip="'Unity' — numerical value 19 in the abjad system; the Báb's unit for organizing His first believers.">váhid</span>. All these names, in these eighteen sets, will, together with the first <span class="vw cat-a" data-tip="'Unity' — numerical value 19 in the abjad system.">váhid</span>, consisting of My own name and those of the eighteen Letters of the Living, constitute the number of <span class="vw cat-a" data-tip="'All things' — numerical value 361 (19×19); the target total of enrolled believers.">Kull-i-Shay'</span>. Of all these believers I shall make mention in the Tablet of God, so that upon each one of them the Beloved of our hearts may, in the Day when He shall have ascended the throne of glory, confer His inestimable blessings, and declare them the dwellers of His Paradise."</p>
+    <p>To <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, more particularly, <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> gave definite injunctions to send Him a written report on the nature and progress of his activities in Isfahán, in Ṭihrán, and in Khurásán. He urged him to inform Him of those who accepted and submitted to the Faith, as well as of those who rejected and repudiated its truth. "Not until I receive your letter from Khurásán," He said, "shall I be ready to set out from this city on My pilgrimage to Ḥijáz."</p>
+  </div>
+</div>
+
+<!-- S2 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 2 — The First Believers of Khurásán</h3><span class="para-ref">Paragraph 103</span></div>
+  <div class="story-summary">Mullá Ḥusayn arrives in Khurásán — fortified by his encounter with Bahá'u'lláh — and preaches with extraordinary effect. The most learned scholars of the province embrace the Faith one by one. The fourth and most important of them is Mírzá Muḥammad-Báqir-i-Qá'iní, who becomes the heart of the operation in Mashhad.</div>
+  <div class="story-text">
+    <p><span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, refreshed and fortified by the experience of his intercourse with <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, set out on his journey to Khurásán. During his visit to that province, he exhibited in an astonishing manner the effects of that regenerating power with which the parting words of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> had invested him. The first to embrace the Faith in Khurásán was Mírzá Aḥmad-i-Azghandí, the most learned, the wisest, and the most eminent among the 'ulamás of that province. In whatever gathering he appeared, no matter how great the number or representative the character of the divines who were present, he alone was invariably the chief speaker. The high traits of his character, as well as his extreme devoutness, had ennobled the reputation which he had already acquired through his <span class="vw cat-c" data-tip="Deep, extensive learning and scholarship.">erudition</span>, his ability and wisdom. The next to embrace the Faith among the shaykhís of Khurásán was Mullá Aḥmad-i-Mu'allim, who, while in Karbilá, had been the instructor of the children of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. Next to him came <span class="cn ch-azim"><span class="ci">🎯</span> Mullá Shaykh 'Alí</span>, whom <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> surnamed 'Aẓím, and then Mullá Mírzá Muḥammad-i-Furúghí, whose learning was unsurpassed except by that of Mírzá Aḥmad. No one apart from these outstanding figures among the ecclesiastical leaders of Khurásán exercised sufficient authority or possessed the necessary knowledge to challenge the arguments of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>.</p>
+    <p><span class="cn ch-baqir-q"><span class="ci">🏹</span> Mírzá Muḥammad-Báqir-i-Qá'iní</span>, who, for the remaining years of his life, had established his residence in Mashhad, was the next to embrace the Message. The love of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> inflamed his soul with such a consuming passion, that no one could resist its force or could belittle its influence. His fearlessness, his unsparing energy, his unswerving loyalty, and the integrity of his life, all combined to make him the terror of his enemies and a source of inspiration to his friends. He placed his home at the disposal of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, arranged for separate interviews between him and the 'ulamás of Mashhad, and continued to endeavour, to the utmost of his power, to remove every obstacle that might impede the progress of the Faith. He was untiring in his efforts, undeviating in his purpose, and inexhaustible in his energy. He continued to labour <span class="vw cat-c" data-tip="Without ever getting tired or giving up; with relentless, unceasing energy.">indefatigably</span> for his beloved Cause until the last hour of his life, when he fell a martyr at the fort of Shaykh Ṭabarsí. In his last days he was bidden by <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>, after the tragic death of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, to assume the leadership of the heroic defenders of that fort. He acquitted himself gloriously of his task. His home, situated in Bálá-Khiyabán, in the city of Mashhad, is up to the present time known by the name of Bábíyyih. Whoever enters it can never escape the accusation of being a Bábí. May his soul rest in peace!</p>
+  </div>
+</div>
+
+<!-- S3 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 3 — The Letter Sent and the Letter Received</h3><span class="para-ref">Paragraphs 104–105</span></div>
+  <div class="story-summary">Mullá Ḥusayn sends his detailed report to the Báb via trusted messengers through Yazd. The letter arrives on a sacred night in Ramadán — close in holiness to the Laylatu'l-Qadr itself. The Báb reads it in the presence of Quddús alone. His joy is so evident, and His exclamations so mysterious, that the Báb's uncle — who witnesses the scene — is left completely unable to understand what they mean.</div>
+  <div class="story-text">
+    <p><span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, as soon as he had won to the Cause such able and devoted supporters, decided to address a written report concerning his activities to <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>. In his communication he referred at length to his sojourn in Isfahán and Káshán, described the account of his experience with <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, referred to the departure of the latter for Mázindarán, related the events of Núr, and informed Him of the success which had attended his own efforts in Khurásán. In it he enclosed a list of the names of those who had responded to his call, and of whose steadfastness and sincerity he was assured. He sent his letter by way of Yazd, through the trustworthy partners of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>'s maternal uncle who were at that time residing in Tabas. That letter reached <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> on the night preceding the twenty-seventh day of Ramadán, a night held in great reverence by all the sects of Islám and regarded by many as rivalling in sacredness the <span class="vw cat-ad" data-tip="'Night of Power' — one of the holiest nights of Ramadán; when the Qur'án was first revealed, described as 'better than a thousand months.'">Laylatu'l-Qadr</span> itself, the night which, in the words of the Qur'án, "excelleth a thousand months." The only companion of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, when that letter reached Him that night, was <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>, with whom He shared a number of its passages.</p>
+    <p>I have heard Mírzá Aḥmad relate the following: "<span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span>'s maternal uncle himself described to me the circumstances attending the receipt of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>'s letter by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>: 'That night I saw such evidences of joy and gladness on the faces of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> and of <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> as I am unable to describe. I often heard <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, in those days, exultingly repeat the words, "How marvellous, how exceedingly marvellous, is that which has occurred between the months of Jamádi and Rajab!" As He was reading the communication addressed to Him by <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, He turned to <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> and, showing him certain passages of that letter, explained the reason for His joyous expressions of surprise. I, for my part, remained completely unaware of the nature of that explanation.'"</p>
+  </div>
+</div>
+
+<!-- S4 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 4 — The Mystery Explained, and the Báb's Confidence in Bahá'u'lláh</h3><span class="para-ref">Paragraphs 106–107</span></div>
+  <div class="story-summary">Mírzá Aḥmad, the first believer in Khurásán and the source of this account, later asks Mullá Ḥusayn directly about the Báb's mysterious exclamation. Mullá Ḥusayn's brief reply — that he happened to be in Ṭihrán between those months — is enough for Mírzá Aḥmad to understand: the mystery was Bahá'u'lláh. The chapter closes with Nabíl reflecting on what Mullá Ḥusayn's letter meant to the Báb — a certainty that the Cause would survive, under Bahá'u'lláh's guidance, no matter what happened to Him.</div>
+  <div class="story-text">
+    <p>Mírzá Aḥmad, upon whom the account of this incident had produced a profound impression, was determined to <span class="vw cat-c" data-tip="To fully understand something deep or mysterious.">fathom</span> its mystery. "Not until I met <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> in Shíráz," he told me, "was I able to satisfy my curiosity. When I repeated to him the account described to me by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>'s uncle, he smiled and said how well he remembered that between the months of Jamádi and Rajab he chanced to be in Ṭihrán. He gave no further explanation, and contented himself with this brief remark. This was sufficient, however, to convince me that in the city of Ṭihrán there lay hidden a Mystery which, when revealed to the world, would bring unspeakable joy to the hearts of both <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> and <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>."</p>
+    <p>The references in <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>'s letter to <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>'s immediate response to the Divine Message, to the vigorous campaign which He had boldly initiated in Núr, and to the marvellous success which had attended His efforts, cheered and gladdened <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, and reinforced His confidence in the ultimate victory of His Cause. He felt assured that if now He were to fall suddenly a victim to the tyranny of His foes and depart from this world, the Cause which He had revealed would live; would, under the direction of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, continue to develop and flourish, and would yield eventually its choicest fruit. The master-hand of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> would steer its course, and the pervading influence of His love would establish it in the hearts of men. Such a conviction fortified His spirit and filled Him with hope. From that moment His fears of the <span class="vw cat-c" data-tip="The quality of something being about to happen very soon.">imminence</span> of peril or danger entirely forsook Him. <span class="vw cat-ac" data-tip="Welcoming destruction as the means of renewal — rising reborn from the ashes, joyfully accepting suffering.">Phoenix-like</span> He welcomed with joy the fire of adversity, and gloried in the glow and heat of its flame.</p>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<div class="guide-footer">
+  End of Chapter 6 Study Guide &nbsp;·&nbsp; The Dawn-Breakers Youth Study Series
+</div>
+
+</body>
+</html>

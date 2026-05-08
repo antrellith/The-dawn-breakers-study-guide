@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dawn-Breakers — Chapter 4 Study Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.75; color: #1a1a1a; background: #faf8f4; padding: 0 0 60px 0; }
+  .book-header { background: linear-gradient(135deg, #0f2a1a 0%, #1a3d2b 60%, #0f2a1a 100%); color: #f5f0e8; text-align: center; padding: 48px 24px 40px; border-bottom: 4px solid #c9a84c; }
+  .book-header .series-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c; margin-bottom: 10px; }
+  .book-header h1 { font-size: 2.2rem; font-weight: normal; letter-spacing: 1px; color: #f5f0e8; margin-bottom: 6px; }
+  .book-header .chapter-title { font-size: 1.1rem; color: #c9a84c; font-style: italic; margin-top: 10px; }
+  .page { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .section-header { margin: 48px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #c9a84c; display: flex; align-items: center; gap: 12px; }
+  .section-header .icon { font-size: 1.4rem; }
+  .section-header h2 { font-size: 1.3rem; font-weight: bold; color: #0f2a1a; letter-spacing: 0.5px; text-transform: uppercase; }
+  .summary-box { background: #f0ede6; border-left: 5px solid #c9a84c; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 16px 0; font-size: 16px; line-height: 1.8; color: #2a2a2a; }
+  .character-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 16px 0; }
+  .character-card { background: white; border-radius: 10px; padding: 16px 18px; border-left: 5px solid; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .character-card .char-name { font-weight: bold; font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .character-card .char-desc { font-size: 14px; color: #444; line-height: 1.65; font-family: Arial, sans-serif; }
+  .vocab-legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 24px; }
+  .vocab-legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #333; font-family: Arial, sans-serif; }
+  .legend-chip { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+  .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin: 12px 0; }
+  .vocab-entry { background: white; border-radius: 8px; padding: 12px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); display: flex; gap: 12px; align-items: flex-start; }
+  .vocab-chip { display: inline-block; padding: 3px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; white-space: nowrap; flex-shrink: 0; font-family: Arial, sans-serif; margin-top: 1px; border: 1px solid rgba(0,0,0,0.12); }
+  .vocab-def { font-size: 14px; color: #444; line-height: 1.6; font-family: Arial, sans-serif; }
+  .story-section { margin: 40px 0; }
+  .story-section-header { background: #1a3d2b; color: white; border-radius: 8px 8px 0 0; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .story-section-header h3 { font-size: 1rem; font-weight: bold; letter-spacing: 0.3px; }
+  .story-section-header .para-ref { font-size: 12px; color: #c9a84c; white-space: nowrap; font-family: Arial, sans-serif; }
+  .story-summary { background: #e8f4ed; border-left: 4px solid #1a3d2b; padding: 14px 20px; font-size: 15px; line-height: 1.75; color: #1a3a24; font-family: Arial, sans-serif; }
+  .story-text { background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; padding: 24px 28px; font-size: 16px; line-height: 1.9; color: #1a1a1a; }
+  .story-text p { margin-bottom: 1.4em; }
+  .story-text p:last-child { margin-bottom: 0; }
+  .cn { font-weight: 700; }
+  .ci { font-style: normal; font-size: 0.85em; margin-right: 1px; display: inline; }
+  .vw { border-radius: 3px; padding: 1px 3px; font-style: italic; }
+  .lot-badge { display: inline-block; font-size: 10px; font-family: Arial, sans-serif; font-weight: bold; color: #7a4f00; background: #fde68a; border: 1px solid #f0a500; border-radius: 8px; padding: 0px 5px; margin-left: 3px; vertical-align: super; line-height: 1.6; letter-spacing: 0.3px; }
+  /* Vocab category colors */
+  .cat-a  { color: #166534; background: #DCFCE7; }
+  .cat-b  { color: #1E3A5F; background: #DBEAFE; }
+  .cat-c  { color: #92400E; background: #FEF3C7; }
+  .cat-d  { color: #7C2D12; background: #FFEDD5; }
+  .cat-e  { color: #6B21A8; background: #F3E8FF; }
+  .cat-ab { color: #1A5276; background: #D6EAF8; }
+  .cat-ac { color: #1E8449; background: #D5F5E3; }
+  .cat-ad { color: #6E2F1A; background: #FDEBD0; }
+  .cat-ae { color: #4A235A; background: #E8DAEF; }
+  .cat-bc { color: #1A3A6B; background: #D6EAF8; }
+  .cat-be { color: #212F82; background: #D7DBFF; }
+  /* Character colors */
+  .ch-ahmad        { color: #8B4513; }
+  .ch-kazim        { color: #7B2D8B; }
+  .ch-husayn       { color: #1565C0; }
+  .ch-bab          { color: #B8860B; }
+  .ch-bahaullah    { color: #AD1457; }
+  .ch-quddus       { color: #00838F; }
+  .ch-baqir        { color: #F57F17; }
+  .ch-mulla-sadiq  { color: #4A148C; }
+  .ch-mirza-jani   { color: #00796B; }
+  .ch-haji-muhammad{ color: #0277BD; }
+  .ch-manuchihr    { color: #00796B; }
+  .ch-wheat        { color: #827717; }
+  .ch-mu-allim     { color: #006064; }
+  .ch-mirza-musa   { color: #880E4F; }
+  .ch-mirza-buzurg { color: #5C6BC0; }
+  .ch-mirza-hadi   { color: #0E6655; }
+  .ch-mirza-jani   { color: #795548; }
+  .ch-mma-nahrí    { color: #4527A0; }
+  [data-tip] { position: relative; cursor: help; }
+  [data-tip]::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 13px; font-family: Arial, sans-serif; padding: 6px 10px; border-radius: 6px; white-space: normal; width: 240px; text-align: center; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity 0.15s; z-index: 100; font-weight: normal; font-style: normal; }
+  [data-tip]:hover::after { opacity: 1; }
+  .guide-footer { text-align: center; margin-top: 60px; padding: 24px; border-top: 1px solid #ccc; color: #888; font-size: 13px; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="book-header">
+  <div class="series-label">Youth Study Guide</div>
+  <h1>The Dawn-Breakers</h1>
+  <div class="chapter-title">Chapter IV: Mullá Ḥusayn's Journey to Ṭihrán</div>
+</div>
+
+<div class="page">
+
+<!-- SUMMARY -->
+<div class="section-header"><span class="icon">📖</span><h2>Chapter Summary</h2></div>
+<div class="summary-box">
+  This is a short but quietly powerful chapter. Mullá Ḥusayn travels north from Shíráz, city by city, carrying the Báb's message. In Isfahán he faces fierce opposition from religious leaders but wins protection from the city's governor. In Káshán and Qum he plants seeds that will only bear fruit years later. In Ṭihrán he stays at a small school and meets a sharp student who overhears his debate with a jealous teacher. That encounter leads to the most significant moment of the chapter: Mullá Ḥusayn sends a scroll to a young nobleman named Ḥusayn-'Alí — and when it is returned with a few words of recognition, Mullá Ḥusayn weeps and kisses the gift in a way that leaves the messenger bewildered. That young nobleman is Bahá'u'lláh.
+</div>
+
+<!-- CHARACTERS -->
+<div class="section-header"><span class="icon">👥</span><h2>Characters</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:16px;">Each character's name and icon appear in their color throughout this guide and in the story text below.</p>
+<div class="character-grid">
+
+  <div class="character-card" style="border-color:#1565C0;">
+    <div class="char-name" style="color:#1565C0;"><span>🕊️</span> Mullá Ḥusayn-i-Bushrú'í <span class="lot-badge">L1</span></div>
+    <div class="char-desc">Still the central figure, continuing his mission northward through Persia. Patient, fearless, and carrying a secret that he guards carefully. His overwhelming joy at Bahá'u'lláh's response to the scroll is one of the most quietly moving moments in the book.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#F57F17;">
+    <div class="char-name" style="color:#F57F17;"><span>🏛️</span> Ḥájí Siyyid Muḥammad-Báqir-i-Rashtí</div>
+    <div class="char-desc">The powerful religious leader of Isfahán who endorsed Siyyid Kázim in Chapter 2 — now deceased. His son Ḥájí Siyyid Asadu'lláh has inherited his seat but is far less courageous, giving evasive answers to those who want Mullá Ḥusayn silenced.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#00796B;">
+    <div class="char-name" style="color:#00796B;"><span>⚖️</span> Manúchihr Khán (Mu'tamídu'd-Dawlih)</div>
+    <div class="char-desc">The wise and fair governor of Isfahán. He refuses to interfere in religious matters and firmly warns the troublemakers to leave Mullá Ḥusayn alone. His protection gives Mullá Ḥusayn the freedom to continue his work in the city.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#827717;">
+    <div class="char-name" style="color:#827717;"><span>🌾</span> The Sifter of Wheat</div>
+    <div class="char-desc">An unnamed, ordinary working man — a wheat sifter — who becomes the very first person in all of Isfahán to accept the Báb's message. Of all the scholars and religious leaders in that learned city, only he immediately recognises the truth. The Báb later singles him out in His writings as the only true believer in Isfahán.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#4A148C;">
+    <div class="char-name" style="color:#4A148C;"><span>🙏</span> Mullá Ṣádiq-i-Khurásání (Ismu'lláhu'l-Asdaq)</div>
+    <div class="char-desc">A devoted follower of Siyyid Kázim who had been quietly preparing the way for the new Revelation in Isfahán for five years. He rushes to meet Mullá Ḥusayn and, after praying privately, has a vision of the Báb's face. He becomes one of the most devoted early believers.</div>
+  </div>
+  </div>
+
+  <div class="character-card" style="border-color:#0E6655;">
+    <div class="char-name" style="color:#0E6655;"><span>🍃</span> Mírzá Hádí <span class="lot-badge">L15</span></div>
+    <div class="char-desc">The fifteenth Letter of the Living, brother of Mírzá Muḥammad-'Alíy-i-Nahrí. He is among the early believers in Isfahán who recognise the truth of the Báb's Cause.</div>
+  </div>
+
+
+  <div class="character-card" style="border-color:#795548;">
+    <div class="char-name" style="color:#795548;"><span>🏪</span> Ḥájí Mírzá Jání</div>
+    <div class="char-desc">A respected merchant of Káshán and the first person in that city to embrace the Báb's message. He becomes a devoted believer and later, when the Báb passes through Káshán, Ḥájí Mírzá Jání hosts Him in his home for three nights — one of the most cherished moments in the book. He later writes one of the earliest histories of the Cause.</div>
+  </div>
+  <div class="character-card" style="border-color:#006064;">
+    <div class="char-name" style="color:#006064;"><span>🎓</span> Mullá Muḥammad-i-Mu'allim</div>
+    <div class="char-desc">A student at the school in Ṭihrán who overhears the debate between Mullá Ḥusayn and his teacher. Moved by Mullá Ḥusayn's brilliance, he comes to his room at midnight. Mullá Ḥusayn entrusts him to deliver the scroll to Bahá'u'lláh — the most important errand in the chapter.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#AD1457;">
+    <div class="char-name" style="color:#AD1457;"><span>⭐</span> Bahá'u'lláh (Ḥusayn-'Alí)</div>
+    <div class="char-desc">The son of a noble family from the province of Núr, 28 years old at this time. Described by Mullá Muḥammad as a man who feeds the hungry, roams the countryside, has no interest in rank, and is loved by all. He receives the scroll, reads a passage aloud, quietly confirms its divine power, and sends back tea and sugar as a gift.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#880E4F;">
+    <div class="char-name" style="color:#880E4F;"><span>🤝</span> Mírzá Músá (Áqáy-i-Kalím)</div>
+    <div class="char-desc">Bahá'u'lláh's brother, who opens the door when the scroll is delivered and lays it before Bahá'u'lláh. He narrates this story to Nabíl many years later. He will remain one of Bahá'u'lláh's most faithful companions throughout his life.</div>
+  </div>
+  </div>
+
+</div>
+
+<!-- VOCABULARY -->
+<div class="section-header"><span class="icon">📝</span><h2>Vocabulary</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:14px;">Each word is color-coded by category. The same color appears when the word shows up in the story text. Hover over a highlighted word to see its definition.</p>
+<div class="vocab-legend">
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DCFCE7;border-color:#166534;"></span> Spiritual / Religious</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DBEAFE;border-color:#1E3A5F;"></span> Political / Power</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FEF3C7;border-color:#92400E;"></span> Qualities / Actions</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FFEDD5;border-color:#7C2D12;"></span> Places / Objects / Texts</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#F3E8FF;border-color:#6B21A8;"></span> Social / Religious Roles</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D6EAF8;border-color:#1A5276;"></span> Spiritual + Political blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D5F5E3;border-color:#1E8449;"></span> Spiritual + Quality blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#E8DAEF;border-color:#4A235A;"></span> Sacred Role blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D7DBFF;border-color:#212F82;"></span> Political Role blend</div>
+</div>
+<div class="vocab-grid">
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Trenchant</span><span class="vocab-def">Sharp, direct, and forceful. The governor's "trenchant words" to the troublemakers were firm and cut straight to the point — stopping their scheming immediately.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-bc">Machinations</span><span class="vocab-def">Clever, secret scheming or plotting against someone. Mullá Ḥusayn was "relieved from the machinations of his enemies" once the governor intervened.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Dispassionately</span><span class="vocab-def">Calmly and without letting personal feelings or bias get in the way. Both the governor and Ḥájí Kalbásí urge the opponents to examine Mullá Ḥusayn's teachings fairly.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Propounding</span><span class="vocab-def">Putting forward an idea or theory for others to consider. Mullá Ḥusayn was "propounding" new doctrines — presenting the Báb's teachings in lectures and conversations.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Germinate</span><span class="vocab-def">To sprout and begin to grow, like a seed. The seeds Mullá Ḥusayn sowed in Qum "did not germinate" until much later — people there didn't accept the Faith until years after his visit.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-d">Madrisih</span><span class="vocab-def">A religious school or college. Mullá Ḥusayn stays at the madrisih of Ním-Ávard in Isfahán and later at the madrisih of Pay-i-Minar in Ṭihrán.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-d">Shikastih-nasta'líq</span><span class="vocab-def">A beautiful and flowing style of Persian calligraphy — Bahá'u'lláh's favourite script. Mullá Ḥusayn asks about it specifically as a way to identify Him.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Ardour</span><span class="vocab-def">Strong passion and enthusiasm; burning intensity of feeling. Mullá Muḥammad is struck by the "ardour" — the passionate fire — of Mullá Ḥusayn in debate.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Felicity</span><span class="vocab-def">Deep happiness and joy; a state of bliss. Mullá Ḥusayn prays that God grant Mullá Muḥammad "eternal felicity" as a blessing for delivering the scroll.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Evinced</span><span class="vocab-def">Showed or demonstrated clearly. Mullá Muḥammad cannot understand why Mullá Ḥusayn "evinced such gladness" at Bahá'u'lláh's simple gift.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Fervid</span><span class="vocab-def">Intensely passionate and sincere. Mullá Muḥammad wonders what could have "kindled so fervid a fellowship" between Mullá Ḥusayn and Bahá'u'lláh.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ae">Sáhibu'z-Zamán</span><span class="vocab-def">"Lord of the Age" — one of the titles used for the promised Qá'im in Shí'ah Islam. It refers to the hidden Imám who was expected to return and establish justice. The Báb's early followers understood this title to apply to Him.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-be">Vazír</span><span class="vocab-def">A high-ranking government minister or official. Mírzá Buzurg, Bahá'u'lláh's father, held this prestigious position in the government of Persia.</span></div>
+</div>
+
+<!-- STORY SECTIONS -->
+<div class="section-header"><span class="icon">📚</span><h2>Story Sections</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:8px;">The exact text of each paragraph from the book is below. <strong>Character names</strong> appear in their assigned colors with icons. <strong>Vocabulary words</strong> are highlighted — hover to see the definition.</p>
+
+<!-- S1 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 1 — Mullá Ḥusayn Arrives in Isfahán</h3><span class="para-ref">Paragraphs 82–83</span></div>
+  <div class="story-summary">Mullá Ḥusayn sets up at a school in Isfahán and begins teaching. His opponents try to get prominent religious leaders to condemn him — but both refuse, urging fair inquiry instead. The city governor shuts the troublemakers down entirely.</div>
+  <div class="story-text">
+    <p>WITH these noble words ringing in his ears, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> embarked upon his perilous enterprise. Wherever he went, to whatever class of people he addressed himself, he delivered fearlessly and without reserve the Message with which his beloved Master had entrusted him. Arriving in Isfahán, he established himself in the <span class="vw cat-d" data-tip="A religious school or college.">madrisih</span> of Ním-Ávard. Around him gathered those who on his previous visit to that city had known him as the favoured messenger of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> to the eminent <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law — a very high honor.">mujtahid</span>, <span class="cn ch-baqir"><span class="ci">🏛️</span> Ḥájí Siyyid Muḥammad-Báqir</span>. He, being now dead, had been succeeded by his son, who had just returned from Najaf and was now established upon the seat of his father. Ḥájí Muḥammad-Ibráhím-i-Kalbásí had also fallen seriously ill, and was on the verge of death. The disciples of the late <span class="cn ch-baqir"><span class="ci">🏛️</span> Ḥájí Siyyid Muḥammad-Báqir</span>, now freed from the restraining influence of their departed teacher, and alarmed at the strange doctrines which <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> was <span class="vw cat-c" data-tip="Putting forward an idea or theory for others to consider.">propounding</span>, vehemently denounced him to Ḥájí Siyyid Asadu'lláh, the son of the late <span class="cn ch-baqir"><span class="ci">🏛️</span> Ḥájí Siyyid Muḥammad-Báqir</span>. "Mullá Ḥusayn," they complained, "was able, in the course of his last visit, to win the support of your illustrious father to the cause of <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span>. No one among the Siyyid's helpless disciples dared to oppose him. He now comes as the upholder of a still more formidable opponent and is pleading His Cause with still greater vehemence and vigour. He is persistently claiming that He whose Cause he now champions is the Revealer of a Book which is divinely inspired, and which bears a striking resemblance to the tone and language of the Qur'án. In the face of the people of this city, he has flung these challenging words: 'Produce one like it, if you are men of truth.' The day is fast approaching when the whole of Isfahán will have embraced his Cause!" Ḥájí Siyyid Asadu'lláh returned evasive answers to their complaints. "What am I to say?" he was at last forced to reply. "Do you not yourselves admit that <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> has, by his eloquence and the cogency of his argument, silenced a man no less great than my illustrious father? How can I, then, who am so inferior to him in merit and knowledge, presume to challenge what he has already approved? Let each man <span class="vw cat-c" data-tip="Calmly and without letting personal feelings or bias get in the way.">dispassionately</span> examine these claims. If he be satisfied, well and good; if not, let him observe silence, and not incur the risk of discrediting the fair name of our Faith."</p>
+    <p>Finding that their efforts had failed to influence Ḥájí Siyyid Asadu'lláh, his disciples referred the matter to Ḥájí Muḥammad-Ibráhím-i-Kalbásí. "Woe betide us," they loudly protested, "for the enemy has risen to disrupt the holy Faith of Islám." In lurid and exaggerated language, they stressed the challenging character of the ideas propounded by <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. "Hold your peace," replied Ḥájí Muḥammad-Ibráhím. "<span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> is not the person to be duped by anyone, nor can he fall a victim to dangerous heresies. If your contention be true, if <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> has indeed espoused a new Faith, it is unquestionably your first obligation to enquire <span class="vw cat-c" data-tip="Calmly and without personal feelings or bias getting in the way.">dispassionately</span> into the character of his teachings, and to refrain from denouncing him without previous and careful scrutiny. If my health and strength be restored, it is my intention, God willing, to investigate the matter myself, and to ascertain the truth."</p>
+    <p>This severe rebuke, pronounced by Ḥájí Kalbásí, greatly disconcerted the disciples of Ḥájí Siyyid Asadu'lláh. In their dismay they appealed to <span class="cn ch-manuchihr"><span class="ci">⚖️</span> Manúchihr Khán</span>, the Mu'tamídu'd-Dawlih, the governor of the city. That wise and judicious ruler refused to interfere in these matters, which he said fell exclusively within the jurisdiction of the 'ulamás. He warned them to abstain from mischief and to cease disturbing the peace and tranquillity of the messenger. His <span class="vw cat-c" data-tip="Sharp, direct, and forceful; cutting straight to the point.">trenchant</span> words shattered the hopes of the mischief-makers. <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> was thereby relieved from the <span class="vw cat-bc" data-tip="Clever, secret scheming or plotting against someone.">machinations</span> of his enemies, and, for a time, pursued untrammelled the course of his labours.</p>
+  </div>
+</div>
+
+<!-- S2 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 2 — The Wheat Sifter and the Early Believers of Isfahán</h3><span class="para-ref">Paragraphs 84–85</span></div>
+  <div class="story-summary">Of all the scholars and religious leaders in learned Isfahán, only one ordinary working man — a wheat sifter — immediately and wholeheartedly accepts the message. The Báb later singles him out in His writings as the only true believer in that great city. A handful of other believers are also named, including Mullá Ṣádiq-i-Khurásání, who has a private vision of the Báb's face.</div>
+  <div class="story-text">
+    <p>The first to embrace the Cause of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> in that city was a man, <span class="cn ch-wheat"><span class="ci">🌾</span> a sifter of wheat</span>, who, as soon as the Call reached his ears, unreservedly accepted the Message. With marvellous devotion he served <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, and through his close association with him became a zealous advocate of the new Revelation. A few years later, when the soul-stirring details of the siege of the fort of Shaykh Ṭabarsí were being recounted to him, he felt an irresistible impulse to throw in his lot with those heroic companions of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> who had risen for the defence of their Faith. Carrying his sieve in his hand, he immediately arose and set out to reach the scene of that memorable encounter. "Why leave so hurriedly?" his friends asked him, as they saw him running in a state of intense excitement through the bazaars of Isfahán. "I have risen," he replied, "to join the glorious company of the defenders of the fort of Shaykh Ṭabarsí! With this sieve which I carry with me, I intend to sift the people in every city through which I pass. Whomsoever I find ready to espouse the Cause I have embraced, I will ask to join me and hasten forthwith to the field of martyrdom." Such was the devotion of this youth, that <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, in the Persian Bayán, refers to him in such terms: "Isfahán, that outstanding city, is distinguished by the religious fervour of its shí'ah inhabitants, by the learning of its divines, and by the keen expectation, shared by high and low alike, of the imminent coming of the <span class="vw cat-ae" data-tip="'Lord of the Age' — a title for the promised Qá'im in Shí'ah Islam.">Sáhibu'z-Zamán</span>. In every quarter of that city, religious institutions have been established. And yet, when the Messenger of God had been made manifest, they who claimed to be the repositories of learning and the expounders of the mysteries of the Faith of God rejected His Message. Of all the inhabitants of that seat of learning, only one person, <span class="cn ch-wheat"><span class="ci">🌾</span> a sifter of wheat</span>, was found to recognise the Truth, and was invested with the robe of Divine virtue!"</p>
+    <p>Among the siyyids of Isfahán, a few, such as Mírzá Muḥammad-'Alíy-i-Nahrí, whose daughter was subsequently joined in wedlock with the Most Great Branch, <span class="cn ch-mirza-hadi"><span class="ci">🍃</span> Mírzá Hádí</span><span class="lot-badge">L15</span>, the brother of Mírzá Muḥammad-'Alí, and Mírzá Muḥammad-Riḍáy-i-Pa-Qal'iyí, recognised the truth of the Cause. <span class="cn ch-mulla-sadiq"><span class="ci">🙏</span> Mullá Ṣádiq-i-Khurásání</span>, formerly known as Muqaddas, and surnamed by Bahá'u'lláh, Ismu'lláhu'l-Asdaq, who, according to the instructions of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>, had during the last five years been residing in Isfahán and had been preparing the way for the advent of the new Revelation, was also among the first believers who identified themselves with the Message proclaimed by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>. As soon as he learned of the arrival of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> in Isfahán, he hastened to meet him. He gives the following account of his first interview, which took place at night in the home of Mírzá Muḥammad-'Alíy-i-Nahrí: "I asked <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> to divulge the name of Him who claimed to be the promised Manifestation. He replied: 'To enquire about that name and to divulge it are alike forbidden.' 'Would it, then, be possible,' I asked, 'for me, even as the Letters of the Living, to seek independently the grace of the All-Merciful and, through prayer, to discover His identity?' 'The door of His grace,' he replied, 'is never closed before the face of him who seeks to find Him.' I immediately retired from his presence, and requested his host to allow me the privacy of a room in his house where, alone and undisturbed, I could commune with God. In the midst of my contemplation, I suddenly remembered the face of a Youth whom I had often observed while in Karbilá, standing in an attitude of prayer, with His face bathed in tears at the entrance of the shrine of the Imám Ḥusayn. That same countenance now reappeared before my eyes. In my vision I seemed to behold that same face, those same features, expressive of such joy as I could never describe. He smiled as He gazed at me. I went towards Him, ready to throw myself at His feet. I was bending towards the ground, when, lo! that radiant figure vanished from before me. Overpowered with joy and gladness, I ran out to meet <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, who with transport received me and assured me that I had, at last, attained the object of my desire. He bade me, however, repress my feelings. 'Declare not your vision to anyone,' he urged me; 'the time for it has not yet arrived. You have reaped the fruit of your patient waiting in Isfahán. You should now proceed to Kirmán, and there acquaint Ḥájí Mírzá Karím Khán with this Message. From that place you should travel to Shíráz and endeavour to rouse the people of that city from their heedlessness. I hope to join you in Shíráz and share with you the blessings of a joyous reunion with our Beloved.'"</p>
+  </div>
+</div>
+
+<!-- S3 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 3 — Káshán, Qum, and the Road to Ṭihrán</h3><span class="para-ref">Paragraphs 86–87</span></div>
+  <div class="story-summary">In Káshán, a merchant named Ḥájí Mírzá Jání is the first to believe. In Qum, Mullá Ḥusayn finds the people utterly closed — the seeds he plants won't sprout for years. He pushes on to Ṭihrán, staying at a modest school. The head of the Shaykhí community there refuses the message and accuses Mullá Ḥusayn of betraying the movement.</div>
+  <div class="story-text">
+    <p>From Isfahán, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> proceeded to Káshán. The first to be enrolled in that city among the company of the faithful was a certain <span class="cn ch-mirza-jani"><span class="ci">🏪</span> Ḥájí Mírzá Jání</span>, surnamed Par-Pa, who was a merchant of note. Among the friends of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> was a well-known divine, Siyyid 'Abdu'l-Báqí, a resident of Káshán and a member of the shaykhí community. Although intimately associated with <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> during his stay in Najaf and Karbilá, the Siyyid felt unable to sacrifice rank and leadership for the Message which his friend had brought him.</p>
+    <p>Arriving in Qum, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> found its people utterly unprepared to heed his call. The seeds he sowed among them did not <span class="vw cat-c" data-tip="To begin to grow and develop, like a seed; ideas or beliefs taking root in hearts.">germinate</span> until the time when <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was exiled to Baghdád. In those days Ḥájí Mírzá Músá, a native of Qum, embraced the Faith, journeyed to Baghdád, and there met <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. He eventually quaffed the cup of martyrdom in His path.</p>
+    <p>From Qum, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> proceeded directly to Ṭihrán. He lived, during his stay in the capital, in one of the rooms which belonged to the <span class="vw cat-d" data-tip="A religious school or college.">madrisih</span> of Mírzá Ṣáliḥ, better known as the <span class="vw cat-d" data-tip="A religious school or college.">madrisih</span> of Pay-i-Minar. Ḥájí Mírzá Muḥammad-i-Khurásání, the leader of the shaykhí community of Ṭihrán, who acted as an instructor in that institution, was approached by <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> but failed to respond to his motivation to accept the Message. "We had cherished the hope," he said to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, "that after the death of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> you would strive to promote the best interests of the shaykhí community and would deliver it from the obscurity into which it has sunk. You seem, however, to have betrayed its cause. You have shattered our fondest expectations. If you persist in disseminating these subversive doctrines, you will eventually extinguish the remnants of the shaykhís in this city." <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> assured him that he had no intention of prolonging his stay in Ṭihrán, that his aim was in no wise to abase or suppress the teachings inculcated by <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>.</p>
+  </div>
+</div>
+
+<!-- S4 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 4 — A Midnight Visitor and a Scroll</h3><span class="para-ref">Paragraph 87 (continued)</span></div>
+  <div class="story-summary">A young student named Mullá Muḥammad overhears the debate between Mullá Ḥusayn and his teacher. Moved by Mullá Ḥusayn's brilliance, he comes to his room at midnight. They talk, and Mullá Muḥammad weeps. Mullá Ḥusayn entrusts him with a scroll, asking him to deliver it at dawn to a young nobleman he describes but does not name.</div>
+  <div class="story-text">
+    <p>During his stay in Ṭihrán, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> each day would leave his room early in the morning and would return to it only an hour after sunset. Upon his return he would quietly and alone re-enter his room, close the door behind him, and remain in the privacy of his cell until the next day. <span class="cn ch-mirza-musa"><span class="ci">🤝</span> Mírzá Músá, Áqáy-i-Kalím</span>, the brother of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, recounted to me the following: "I have heard <span class="cn ch-mu-allim"><span class="ci">🎓</span> Mullá Muḥammad-i-Mu'allim</span>, a native of Núr, in the province of Mázindarán, who was a fervent admirer of both <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>, relate this story: 'I was in those days recognised as one of the favoured disciples of Ḥájí Mírzá Muḥammad, and lived in the same school in which he taught. My room adjoined his room, and we were closely associated together. On the day that he was engaged in discussion with <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, I overheard their conversation from beginning to end, and was deeply affected by the <span class="vw cat-c" data-tip="Strong passion and enthusiasm; burning intensity of feeling.">ardour</span>, the fluency, and learning of that youthful stranger. I was surprised at the evasive answers, the arrogance, and contemptuous behaviour of Ḥájí Mírzá Muḥammad. That day I felt strongly attracted by the charm of that youth, and deeply resented the unseemly conduct of my teacher towards him. I concealed my feelings, however, and pretended to ignore his discussions with <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. I was seized with a passionate desire to meet the latter, and ventured, at the hour of midnight, to visit him. He did not expect me, but I knocked at his door, and found him awake seated beside his lamp. He received me affectionately, and spoke to me with extreme courtesy and tenderness. I unburdened my heart to him, and as I was addressing him, tears, which I could not repress, flowed from my eyes. "I can now see," he said, "the reason why I have chosen to dwell in this place. Your teacher has contemptuously rejected this Message and despised its Author. My hope is that his pupil may, unlike his master, recognise its truth. What is your name, and which city is your home?" "My name," I replied, "is Mullá Muḥammad, and my surname Mu'allim. My home is Núr, in the province of Mázindarán." "Tell me," further enquired <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, "is there to-day among the family of the late Mírzá Buzurg-i-Núrí, who was so renowned for his character, his charm, and artistic and intellectual attainments, anyone who has proved himself capable of maintaining the high traditions of that illustrious house?" "Yea," I replied, "among his sons now living, one has distinguished Himself by the very traits which characterised His father. By His virtuous life, His high attainments, His loving-kindness and liberality, He has proved Himself a noble descendant of a noble father." "What is His occupation?" he asked me. "He cheers the disconsolate and feeds the hungry," I replied. "What of His rank and position?" "He has none," I said, "apart from befriending the poor and the stranger." "What is His name?" "<span class="cn ch-bahaullah"><span class="ci">⭐</span> Ḥusayn-'Alí</span>." "In which of the scripts of His father does He excel?" "His favourite script is <span class="vw cat-d" data-tip="A beautiful and flowing style of Persian calligraphy — Bahá'u'lláh's favourite.">shikastih-nasta'líq</span>." "How does He spend His time?" "He roams the woods and delights in the beauties of the countryside." "What is His age?" "Eight and twenty." The eagerness with which <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> questioned me, and the sense of delight with which he welcomed every particular I gave him, greatly surprised me. Turning to me, with his face beaming with satisfaction and joy, he once more enquired: "I presume you often meet Him?" "I frequently visit His home," I replied. "Will you," he said, "deliver into His hands a trust from me?" "Most assuredly," was my reply. He then gave me a scroll wrapped in a piece of cloth, and requested me to hand it to Him the next day at the hour of dawn. "Should He deign to answer me," he added, "will you be kind enough to acquaint me with His reply?" I received the scroll from him and, at break of day, arose to carry out his desire.</p>
+  </div>
+</div>
+
+<!-- S5 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 5 — The Scroll Reaches Bahá'u'lláh</h3><span class="para-ref">Paragraph 87 (continued)</span></div>
+  <div class="story-summary">Mullá Muḥammad arrives at the nobleman's house and is welcomed by his brother Mírzá Músá. Bahá'u'lláh receives the scroll, reads a passage aloud, and quietly declares that anyone who recognises the Qur'án as divine and yet hesitates for even a moment to recognise the same power in these words has erred. He sends back tea and sugar as a gift with a message of appreciation and love.</div>
+  <div class="story-text">
+    <p>'As I approached the house of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, I recognised His brother <span class="cn ch-mirza-musa"><span class="ci">🤝</span> Mírzá Músá</span>, who was standing at the gate, and to whom I communicated the object of my visit. He went into the house and soon reappeared bearing a message of welcome. I was ushered into His presence, and presented the scroll to <span class="cn ch-mirza-musa"><span class="ci">🤝</span> Mírzá Músá</span>, who laid it before <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. He bade us both be seated. Unfolding the scroll, He glanced at its contents and began to read aloud to us certain of its passages. I sat enraptured as I listened to the sound of His voice and the sweetness of its melody. He had read a page of the scroll when, turning to His brother, He said: "<span class="cn ch-mirza-musa"><span class="ci">🤝</span> Músá</span>, what have you to say? Verily I say, whoso believes in the Qur'án and recognises its Divine origin, and yet hesitates, though it be for a moment, to admit that these soul-stirring words are endowed with the same regenerating power, has most assuredly erred in his judgment and has strayed far from the path of justice." He spoke no more. Dismissing me from His presence, He charged me to take to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, as a gift from Him, a loaf of Russian sugar and a package of tea, and to convey to him the expression of His appreciation and love.</p>
+  </div>
+</div>
+
+<!-- S6 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 6 — Mullá Ḥusayn's Overwhelming Joy</h3><span class="para-ref">Paragraph 87 (continued)</span></div>
+  <div class="story-summary">When Mullá Muḥammad delivers the gift and message, Mullá Ḥusayn leaps to his feet, receives the gift with bowed head, kisses it, then embraces Mullá Muḥammad and kisses his eyes. The bewildered messenger cannot understand the depth of emotion. A few days later, Mullá Ḥusayn leaves for Khurásán, warning Mullá Muḥammad to keep everything secret, and prophesying that much blood will be shed in Ṭihrán for this Cause.</div>
+  <div class="story-text">
+    <p>'I arose and, filled with joy, hastened back to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, and delivered to him the gift and message of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. With what joy and exultation he received them from me! Words fail me to describe the intensity of his emotion. He started to his feet, received with bowed head the gift from my hand, and fervently kissed it. He then took me in his arms, kissed my eyes, and said: "My dearly beloved friend! I pray that even as you have rejoiced my heart, God may grant you eternal <span class="vw cat-c" data-tip="Deep happiness and joy; a state of bliss.">felicity</span> and fill your heart with imperishable gladness." I was amazed at the behaviour of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. What could be, I thought to myself, the nature of the bond that unites these two souls? What could have kindled so <span class="vw cat-c" data-tip="Intensely passionate and sincere.">fervid</span> a fellowship in their hearts? Why should <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, in whose sight the pomp and circumstance of royalty were the merest trifle, have <span class="vw cat-c" data-tip="Showed or demonstrated clearly.">evinced</span> such gladness at the sight of so inconsiderable a gift from the hands of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>? I was puzzled by this thought and could not unravel its mystery.</p>
+    <p>'A few days later, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> left for Khurásán. As he bade me farewell, he said: "Breathe not to anyone what you have heard and witnessed. Let this be a secret hidden within your breast. Divulge not His name, for they who envy His position will arise to harm Him. In your moments of meditation, pray that the Almighty may protect Him, that, through Him, He may exalt the downtrodden, enrich the poor, and redeem the fallen. The secret of things is concealed from our eyes. Ours is the duty to raise the call of the New Day and to proclaim this Divine Message unto all people. Many a soul will, in this city, shed his blood in this path. That blood will water the Tree of God, will cause it to flourish, and to overshadow all mankind."'"</p>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<div class="guide-footer">
+  End of Chapter 4 Study Guide &nbsp;·&nbsp; The Dawn-Breakers Youth Study Series
+</div>
+
+</body>
+</html>
