@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dawn-Breakers — Chapter 5 Study Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.75; color: #1a1a1a; background: #faf8f4; padding: 0 0 60px 0; }
+  .book-header { background: linear-gradient(135deg, #0f2a1a 0%, #1a3d2b 60%, #0f2a1a 100%); color: #f5f0e8; text-align: center; padding: 48px 24px 40px; border-bottom: 4px solid #c9a84c; }
+  .book-header .series-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c; margin-bottom: 10px; }
+  .book-header h1 { font-size: 2.2rem; font-weight: normal; letter-spacing: 1px; color: #f5f0e8; margin-bottom: 6px; }
+  .book-header .chapter-title { font-size: 1.1rem; color: #c9a84c; font-style: italic; margin-top: 10px; }
+  .page { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .section-header { margin: 48px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #c9a84c; display: flex; align-items: center; gap: 12px; }
+  .section-header .icon { font-size: 1.4rem; }
+  .section-header h2 { font-size: 1.3rem; font-weight: bold; color: #0f2a1a; letter-spacing: 0.5px; text-transform: uppercase; }
+  .summary-box { background: #f0ede6; border-left: 5px solid #c9a84c; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 16px 0; font-size: 16px; line-height: 1.8; color: #2a2a2a; }
+  .character-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 16px 0; }
+  .character-card { background: white; border-radius: 10px; padding: 16px 18px; border-left: 5px solid; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .character-card .char-name { font-weight: bold; font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .character-card .char-desc { font-size: 14px; color: #444; line-height: 1.65; font-family: Arial, sans-serif; }
+  .vocab-legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 24px; }
+  .vocab-legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #333; font-family: Arial, sans-serif; }
+  .legend-chip { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+  .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin: 12px 0; }
+  .vocab-entry { background: white; border-radius: 8px; padding: 12px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); display: flex; gap: 12px; align-items: flex-start; }
+  .vocab-chip { display: inline-block; padding: 3px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; white-space: nowrap; flex-shrink: 0; font-family: Arial, sans-serif; margin-top: 1px; border: 1px solid rgba(0,0,0,0.12); }
+  .vocab-def { font-size: 14px; color: #444; line-height: 1.6; font-family: Arial, sans-serif; }
+  .story-section { margin: 40px 0; }
+  .story-section-header { background: #1a3d2b; color: white; border-radius: 8px 8px 0 0; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .story-section-header h3 { font-size: 1rem; font-weight: bold; letter-spacing: 0.3px; }
+  .story-section-header .para-ref { font-size: 12px; color: #c9a84c; white-space: nowrap; font-family: Arial, sans-serif; }
+  .story-summary { background: #e8f4ed; border-left: 4px solid #1a3d2b; padding: 14px 20px; font-size: 15px; line-height: 1.75; color: #1a3a24; font-family: Arial, sans-serif; }
+  .story-text { background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; padding: 24px 28px; font-size: 16px; line-height: 1.9; color: #1a1a1a; }
+  .story-text p { margin-bottom: 1.4em; }
+  .story-text p:last-child { margin-bottom: 0; }
+  .cn { font-weight: 700; }
+  .ci { font-style: normal; font-size: 0.85em; margin-right: 1px; display: inline; }
+  .vw { border-radius: 3px; padding: 1px 3px; font-style: italic; }
+  .lot-badge { display: inline-block; font-size: 10px; font-family: Arial, sans-serif; font-weight: bold; color: #7a4f00; background: #fde68a; border: 1px solid #f0a500; border-radius: 8px; padding: 0px 5px; margin-left: 3px; vertical-align: super; line-height: 1.6; letter-spacing: 0.3px; }
+  /* Vocab */
+  .cat-a  { color: #166534; background: #DCFCE7; }
+  .cat-b  { color: #1E3A5F; background: #DBEAFE; }
+  .cat-c  { color: #92400E; background: #FEF3C7; }
+  .cat-d  { color: #7C2D12; background: #FFEDD5; }
+  .cat-e  { color: #6B21A8; background: #F3E8FF; }
+  .cat-ab { color: #1A5276; background: #D6EAF8; }
+  .cat-ac { color: #1E8449; background: #D5F5E3; }
+  .cat-ad { color: #6E2F1A; background: #FDEBD0; }
+  .cat-ae { color: #4A235A; background: #E8DAEF; }
+  .cat-bc { color: #1A3A6B; background: #D6EAF8; }
+  .cat-be { color: #212F82; background: #D7DBFF; }
+  /* Characters */
+  .ch-bahaullah  { color: #AD1457; }
+  .ch-bab        { color: #B8860B; }
+  .ch-mirza-musa { color: #880E4F; }
+  .ch-mirza-buzurg { color: #5C6BC0; }
+  .ch-dervish    { color: #00695C; }
+  .ch-aqasi      { color: #B71C1C; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip] { position: relative; cursor: help; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip]::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 13px; font-family: Arial, sans-serif; padding: 6px 10px; border-radius: 6px; white-space: normal; width: 240px; text-align: center; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity 0.15s; z-index: 100; font-weight: normal; font-style: normal; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip]:hover::after { opacity: 1; }
+  .guide-footer { text-align: center; margin-top: 60px; padding: 24px; border-top: 1px solid #ccc; color: #888; font-size: 13px; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="chapter-nav">
+  <a class="chapter-nav nav-prev" href="DawnBreakers_Ch4_StudyGuide_v2.html">← Chapter 4</a>
+  <a class="chapter-nav nav-index" href="DawnBreakers_Index.html">☰ All Chapters</a>
+  <a class="chapter-nav nav-next" href="DawnBreakers_Ch6_StudyGuide_v1.html">Chapter 6 →</a>
+</div>
+<div class="book-header">
+  <div class="series-label">Youth Study Guide</div>
+  <h1>The Dawn-Breakers</h1>
+  <div class="chapter-title">Chapter V: Bahá'u'lláh's Journey to Mázindarán</div>
+</div>
+
+<div class="page">
+
+<!-- SUMMARY -->
+<div class="section-header"><span class="icon">📖</span><h2>Chapter Summary</h2></div>
+<div class="summary-box">
+  This chapter shifts focus entirely to Bahá'u'lláh — the first chapter where He is the central actor rather than a background presence. He travels to His ancestral home in Núr to proclaim the Báb's message. The chapter opens with a portrait of His father, the Vazír — his wealth, his fall from fortune, and a prophetic dream about his son. Then comes Bahá'u'lláh's journey through Núr: a debate that silences a great mujtahid's disciples, the dramatic conversion of two envoys sent to test Him, a brief and beautiful encounter with a wandering dervish who follows Him on foot composing a love poem, and a prolonged legal battle with the greedy Grand Vazír who tries to seize His estate. Throughout, Bahá'u'lláh is shown to be fearless, generous, and utterly unintimidated by power.
+</div>
+
+<!-- CHARACTERS -->
+<div class="section-header"><span class="icon">👥</span><h2>Characters</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:16px;">Each character's name and icon appear in their color throughout this guide and in the story text below.</p>
+<div class="character-grid">
+
+  <div class="character-card" style="border-color:#AD1457;">
+    <div class="char-name" style="color:#AD1457;"><span>⭐</span> Bahá'u'lláh</div>
+    <div class="char-desc">The central figure of this chapter — and of the second half of the entire book. He travels to His ancestral home in Núr to proclaim the Báb's message, wins over crowds of people, outmaneuvers the scheming Grand Vazír, and in one brief roadside encounter transforms a wandering dervish. His courage, generosity, and spiritual authority run through every page.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#5C6BC0;">
+    <div class="char-name" style="color:#5C6BC0;"><span>🎖️</span> Mírzá Buzurg-i-Núrí (the Vazír)</div>
+    <div class="char-desc">Bahá'u'lláh's late father — a nobleman, minister of the Crown, artist, and man of great wealth and character. Though he has died before the events of this chapter, his story fills the first section. He suffered financial ruin with calm dignity, had a prophetic dream about Bahá'u'lláh swimming in a vast ocean, and remained devoted to his son until his final hour.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#00695C;">
+    <div class="char-name" style="color:#00695C;"><span>🎵</span> The Dervish (Muṣṭafá Big-i-Sanandají, surnamed Majdhúb)</div>
+    <div class="char-desc">A wandering mystic whom Bahá'u'lláh encounters sitting by a brook, cooking his food and speaking in riddles about "eating God." Within a single conversation, Bahá'u'lláh transforms him completely. He immediately rises, abandons his cooking utensils, and follows Bahá'u'lláh on foot — composing a love poem on the spot and chanting it as he goes.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#B71C1C;">
+    <div class="char-name" style="color:#B71C1C;"><span>🪙</span> Ḥájí Mírzá Aqásí (Grand Vazír)</div>
+    <div class="char-desc">The Prime Minister of Persia under Muḥammad Sháh — and one of the great villains of the book. In this chapter he tries to seize Bahá'u'lláh's estate through fraud and manipulation, is outmaneuvered at every turn, and finally resorts to petty accusations out of impotent rage. He will later be instrumental in the Báb's imprisonment. His greed and jealousy of Bahá'u'lláh are established here.</div>
+  </div>
+
+</div>
+
+<!-- VOCABULARY -->
+<div class="section-header"><span class="icon">📝</span><h2>Vocabulary</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:14px;">Each word is color-coded by category. The same color appears when the word shows up in the story text. Hover over a highlighted word to see its definition.</p>
+<div class="vocab-legend">
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DCFCE7;border-color:#166534;"></span> Spiritual / Religious</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DBEAFE;border-color:#1E3A5F;"></span> Political / Power</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FEF3C7;border-color:#92400E;"></span> Qualities / Actions</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FFEDD5;border-color:#7C2D12;"></span> Places / Objects / Texts</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#F3E8FF;border-color:#6B21A8;"></span> Social / Religious Roles</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D6EAF8;border-color:#1A5276;"></span> Spiritual + Political blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D5F5E3;border-color:#1E8449;"></span> Spiritual + Quality blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#E8DAEF;border-color:#4A235A;"></span> Sacred Role blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D7DBFF;border-color:#212F82;"></span> Political Role blend</div>
+</div>
+<div class="vocab-grid">
+  <div class="vocab-entry"><span class="vocab-chip cat-be">Vazír</span><span class="vocab-def">A high-ranking government minister or official. Bahá'u'lláh's father held this prestigious title — "the late Vazír" is how Bahá'u'lláh refers to him.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Fortitude</span><span class="vocab-def">The strength to endure hardship with calm courage. The Vazír maintained his "fortitude" even as his wealth collapsed around him — dignified to the end.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Expatiating</span><span class="vocab-def">Speaking or writing at great length and in detail about something. The mujtahid was "expatiating upon a dark passage" — going on at length trying to explain a difficult text.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Elucidate</span><span class="vocab-def">To explain or make something clearer; to shed light on. The mujtahid asked his disciples to "elucidate" a theory — to explain it clearly — and they all failed.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-d">Kuláh</span><span class="vocab-def">A lambskin hat worn by Persian state officials and nobility, as opposed to the turban worn by the clergy. By wearing a kuláh, Bahá'u'lláh was visibly identified as a layman and nobleman, not a religious scholar.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ae">Sáhibu'z-Zamán</span><span class="vocab-def">"Lord of the Age" — one of the titles for the promised Qá'im in Shí'ah Islam. In the mujtahid's dream, he sees people pointing to a house where the Sáhibu'z-Zamán dwells — and finds Bahá'u'lláh already there.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Lethargy</span><span class="vocab-def">A state of tiredness and lack of energy or enthusiasm; sluggish inaction. The news of the envoys' conversion "roused the people from their lethargy" — jolted them awake from their complacency.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-e">Dervish</span><span class="vocab-def">A member of a Muslim religious order known for a wandering, ascetic life of poverty and devotion. Dervishes often used poetry and music as spiritual practice. The dervish Bahá'u'lláh meets is cooking by a roadside brook.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Enamoured</span><span class="vocab-def">Deeply in love with or captivated by something or someone. The dervish became so "enamoured" with the teachings Bahá'u'lláh had given him that he abandoned everything to follow Him.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Effulgence</span><span class="vocab-def">A brilliant, radiant, overwhelming light — often used to describe divine radiance. The jewels in the Vazír's dream "dazzled" him with their "effulgence" — the blinding brilliance of Bahá'u'lláh's future Revelation.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Disparagingly</span><span class="vocab-def">In a way that expresses a low opinion of something; with contempt. Mullá Muḥammad "disparagingly remarked" — meaning he spoke dismissively, with a tone of contempt.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-bc">Impotent</span><span class="vocab-def">Completely powerless; unable to take effective action. The Grand Vazír, despite holding the highest office in Persia, found himself "impotent" before Bahá'u'lláh — helpless in every contest.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-bc">Accede</span><span class="vocab-def">To agree to or comply with what someone wants; to yield to pressure. Bahá'u'lláh refuses to simply "accede to the views" of the powerful men around Him — He speaks the truth regardless.</span></div>
+</div>
+
+<!-- STORY SECTIONS -->
+<div class="section-header"><span class="icon">📚</span><h2>Story Sections</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:8px;">The exact text of each paragraph from the book is below. <strong>Character names</strong> appear in their assigned colors with icons. <strong>Vocabulary words</strong> are highlighted — hover to see the definition.</p>
+
+<!-- S1 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 1 — The Vazír: Wealth, Ruin, and a Prophetic Dream</h3><span class="para-ref">Paragraphs 88–89</span></div>
+  <div class="story-summary">Bahá'u'lláh travels to His ancestral home in Núr. The chapter opens with Bahá'u'lláh recounting His father's story — a man of great wealth, nobility, and character who suffered sudden financial ruin but endured it with quiet dignity. Then the Vazír's remarkable dream: he sees Bahá'u'lláh swimming in a limitless ocean, radiant, with multitudes clinging to His locks. A soothsayer interprets it as a prophecy of Bahá'u'lláh's future ascendancy over the world.</div>
+  <div class="story-text">
+    <p>THE first journey <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> undertook for the purpose of promoting the Revelation announced by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> was to His ancestral home in Núr, in the province of Mázindarán. He set out for the village of Tákúr, the personal estate of His father, where He owned a vast mansion, royally furnished and superbly situated. It was my privilege to hear <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> Himself, one day, recount the following: "The late <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, My father, enjoyed a most enviable position among his countrymen. His vast wealth, his noble ancestry, his artistic attainments, his unrivalled prestige and exalted rank made him the object of the admiration of all who knew him. For a period of over twenty years, no one among the wide circle of his family and kindred, which extended over Núr and Ṭihrán, suffered distress, injury, or illness. They enjoyed, during a long and uninterrupted period, rich and manifold blessings. Quite suddenly, however, this prosperity and glory gave way to a series of calamities which severely shook the foundations of his material prosperity. The first loss he suffered was occasioned by a great flood which, rising in the mountains of Mázindarán, swept with great violence over the village of Tákúr, and utterly destroyed half the mansion of the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, situated above the fortress of that village. The best part of that house, which had been known for the solidity of its foundations, was utterly wiped away by the fury of the roaring torrent. Its precious articles of furniture were destroyed, and its elaborate ornamentation irretrievably ruined. This was shortly followed by the loss of various State positions which the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span> occupied, and by the repeated assaults directed against him by his envious adversaries. Despite this sudden change of fortune, the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span> maintained his dignity and calm, and continued, within the restricted limits of his means, his acts of benevolence and charity. He continued to exercise towards his faithless associates that same courtesy and kindness that had characterised his dealings with his fellow-men. With splendid <span class="vw cat-c" data-tip="The strength to endure hardship with calm courage.">fortitude</span> he grappled, until the last hour of his life, with the adversities that weighed so heavily upon him."</p>
+    <p>When <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was still a child, the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, His father, dreamed a dream. <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> appeared to him swimming in a vast, limitless ocean. His body shone upon the waters with a radiance that illumined the sea. Around His head, which could distinctly be seen above the waters, there radiated, in all directions, His long, jet-black locks, floating in great profusion above the waves. As he dreamed, a multitude of fishes gathered round Him, each holding fast to the extremity of one hair. Fascinated by the <span class="vw cat-ac" data-tip="A brilliant, radiant, overwhelming light — often used to describe divine radiance.">effulgence</span> of His face, they followed Him in whatever direction He swam. Great as was their number, and however firmly they clung to His locks, not one single hair seemed to have been detached from His head, nor did the least injury affect His person. Free and unrestrained, He moved above the waters and they all followed Him.</p>
+    <p>The <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, greatly impressed by this dream, summoned a soothsayer, who had achieved fame in that region, and asked him to interpret it for him. This man, as if inspired by a premonition of the future glory of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, declared: "The limitless ocean that you have seen in your dream, O <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, is none other than the world of being. Single-handed and alone, your son will achieve supreme ascendancy over it. Wherever He may please, He will proceed unhindered. No one will resist His march, no one will hinder His progress. The multitude of fishes signifies the turmoil which He will arouse amidst the peoples and kindreds of the earth. Around Him will they gather, and to Him will they cling. Assured of the unfailing protection of the Almighty, this tumult will never harm His person, nor will His loneliness upon the sea of life endanger His safety." That soothsayer was subsequently taken to see <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. He looked intently upon His face, and examined carefully His features. He was charmed by His appearance, and extolled every trait of His countenance. Every expression in that face revealed to his eyes a sign of His concealed glory. So great was his admiration, and so profuse his praise of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, that the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, from that day, became even more passionately devoted to his son.</p>
+  </div>
+</div>
+
+<!-- S2 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 2 — The Mujtahid's Dream and a Previous Visit</h3><span class="para-ref">Paragraphs 90–91</span></div>
+  <div class="story-summary">Before the declaration of the Báb, Bahá'u'lláh had already visited Núr and silenced the great mujtahid's assembled disciples with a spontaneous explanation of an abstruse text — despite not being a scholar. After Bahá'u'lláh left, the mujtahid shared two remarkable dreams: in the first, he tries to visit the promised Sáhibu'z-Zamán and is told access is forbidden because Bahá'u'lláh is already in private conversation with Him. In the second, he finds Bahá'u'lláh's coffers filled with jewel-encrusted books whose radiance blinds him.</div>
+  <div class="story-text">
+    <p><span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had already, prior to the declaration of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, visited the district of Núr, at a time when the celebrated <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law — a very high honor.">mujtahid</span> Mírzá Muḥammad-Taqíy-i-Núrí was at the height of his authority and influence. Such was the eminence of his position, that they who sat at his feet regarded themselves each as the authorised exponent of the Faith and Law of Islám. The <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> was addressing a company of over two hundred of such disciples, and was <span class="vw cat-c" data-tip="Speaking at great length and in detail about something.">expatiating</span> upon a dark passage of the reported utterances of the imáms, when <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, followed by a number of His companions, passed by that place, and paused for a while to listen to his discourse. The <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> asked his disciples to <span class="vw cat-c" data-tip="To explain or make something clearer; to shed light on.">elucidate</span> an abstruse theory relating to the metaphysical aspects of the Islamic teachings. As they all confessed their inability to explain it, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was moved to give, in brief but convincing language, a lucid exposition of that theory. The <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> was greatly annoyed at the incompetence of his disciples. "For years I have been instructing you," he angrily exclaimed, "and have patiently striven to instil into your minds the profoundest truths and the noblest principles of the Faith. And yet you allow, after all these years of persistent study, this youth, a wearer of the <span class="vw cat-d" data-tip="A lambskin hat worn by Persian state officials — visually identifying Bahá'u'lláh as a nobleman, not a cleric.">kuláh</span>, who has had no share in scholarly training, and who is entirely unfamiliar with your academic learning, to demonstrate his superiority over you!"</p>
+    <p>Later on, when <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had departed, the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> related to his disciples two of his recent dreams, the circumstances of which he believed were of the utmost significance. "In my first dream," he said, "I was standing in the midst of a vast concourse of people, all of whom seemed to be pointing to a certain house in which they said the <span class="vw cat-ae" data-tip="'Lord of the Age' — a title for the promised Qá'im in Shí'ah Islam.">Sáhibu'z-Zamán</span> dwelt. Frantic with joy, I hastened in my dream to attain His presence. When I reached the house, I was, to my great surprise, refused admittance. 'The promised Qá'im,' I was informed, 'is engaged in private conversation with another Person. Access to them is strictly forbidden.' From the guards who were standing beside the door, I gathered that that Person was none other than <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>.</p>
+    <p>"In my second dream," the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> continued, "I found myself in a place where I beheld around me a number of coffers, each of which, it was stated, belonged to <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. As I opened them, I found them to be filled with books. Every word and letter recorded in these books was set with the most exquisite jewels. Their radiance dazzled me. I was so overpowered by their brilliance that I awoke suddenly from my dream."</p>
+  </div>
+</div>
+
+<!-- S3 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 3 — Bahá'u'lláh Arrives in Núr</h3><span class="para-ref">Paragraphs 92–93</span></div>
+  <div class="story-summary">When Bahá'u'lláh arrives in Núr in the year 60, the great mujtahid is dead and his community is a shadow of its former self. Bahá'u'lláh is greeted warmly by officials and notables, but deflects all political questions and speaks only of the new Revelation. His uncle Azíz opposes Him and tries to stir up the new mujtahid Mullá Muḥammad against Him — but the mujtahid, realising he cannot match Bahá'u'lláh, makes only a written statement, which backfires through a grammatical error and scandalises everyone who reads it.</div>
+  <div class="story-text">
+    <p>When, in the year '60, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> arrived in Núr, He discovered that the celebrated <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> who on His previous visit had wielded such immense power had passed away. The vast number of his devotees had shrunk into a mere handful of dejected disciples who, under the leadership of his successor, Mullá Muḥammad, were striving to uphold the traditions of their departed leader. The enthusiasm which greeted <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>'s arrival sharply contrasted with the gloom that had settled upon the remnants of that once flourishing community. A large number of the officials and notables in that neighbourhood called upon Him and, with every mark of affection and respect, accorded Him a befitting welcome. They were eager, in view of the social position He occupied, to learn from Him all the news regarding the life of the Sháh, the activities of his ministers, and the affairs of his government. To their enquiries <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> replied with extreme indifference, and seemed to reveal very little interest or concern. With persuasive eloquence He pleaded the cause of the new Revelation, and directed their attention to the immeasurable benefits which it was destined to confer upon their country. Those who heard Him marvelled at the keen interest which a man of His position and age evinced for truths which primarily concerned the divines and theologians of Islám. They felt powerless to challenge the soundness of His arguments or to belittle the Cause which He so ably expounded. They admired the loftiness of His enthusiasm and the profundity of His thoughts, and were deeply impressed by His detachment and self-effacement.</p>
+    <p>None dared to contend with His views except His uncle Azíz, who ventured to oppose Him, challenging His statements and aspersing their truth. When those who heard him sought to silence this opponent and to injure him, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> intervened in his behalf, and advised them to leave him in the hands of God. Alarmed, he sought the aid of the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> of Núr, Mullá Muḥammad, and appealed to him to lend him immediate assistance. "O vicegerent of the Prophet of God!" he said. "Behold what has befallen the Faith. A youth, a layman, attired in the garb of nobility, has come to Núr, has invaded the strongholds of orthodoxy, and disrupted the holy Faith of Islám. Arise, and resist his onslaught. Whoever attains his presence falls immediately under his spell, and is enthralled by the power of his utterance. I know not whether he is a sorcerer, or whether he mixes with his tea some mysterious substance that makes every man who drinks the tea fall a victim to its charm." The <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span>, notwithstanding his own lack of comprehension, was able to realise the folly of such remarks. Jestingly he observed: "Have you not partaken of his tea, or heard him address his companions?" "I have," he replied, "but, thanks to your loving protection, I have remained immune from the effect of his mysterious power." The <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span>, finding himself unequal to the task of arousing the populace against <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, and of combating directly the ideas which so powerful an opponent was fearlessly spreading, contented himself with a written statement in which he declared: "O Azíz, be not afraid, no one will dare molest you." In writing this, the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> had, through a grammatical error, so perverted the purport of his statement, that those who read it among the notables of the village of Tákúr were scandalised by its meaning, and vilified both the bearer and the author of that statement.</p>
+  </div>
+</div>
+
+<!-- S4 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 4 — The Conversion of the Mujtahid's Envoys</h3><span class="para-ref">Paragraphs 94–95</span></div>
+  <div class="story-summary">As crowds flock to Bahá'u'lláh, the mujtahid Mullá Muḥammad sends two of his most trusted disciples to investigate. Both are immediately and completely overwhelmed — one stands trembling at the door unable to speak, the other declares he will never leave. The news of their conversion sweeps the district, rousing the people from their lethargy. Bahá'u'lláh then visits the mujtahid in person — but Mullá Muḥammad consults the Qur'án in bad faith and refuses to go further.</div>
+  <div class="story-text">
+    <p>Those who attained the presence of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> and heard Him expound the Message proclaimed by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> were so much impressed by the earnestness of His appeal that they forthwith arose to disseminate that same Message among the people of Núr and to extol the virtues of its distinguished Promoter. The disciples of Mullá Muḥammad meanwhile endeavoured to persuade their teacher to proceed to Tákúr, to visit <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> in person, to ascertain from Him the nature of this new Revelation, and to enlighten his followers regarding its character and purpose. To their earnest entreaty the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> returned an evasive answer. His disciples, however, refused to admit the validity of the objections he raised. They urged that the first obligation imposed upon a man of his position, whose function was to preserve the integrity of shí'ah Islám, was to enquire into the nature of every movement that tended to affect the interests of their Faith. Mullá Muḥammad eventually decided to delegate two of his eminent lieutenants, Mullá Abbás and Mírzá Abu'l-Qásim, both sons-in-law and trusted disciples of the late <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span>, Mírzá Muḥammad-Taqí, to visit <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> and to determine the true character of the Message He had brought. He pledged himself to endorse unreservedly whatever conclusions they might arrive at, and to recognise their decision in such matters as final.</p>
+    <p>On being informed, upon their arrival in Tákúr, that <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had departed for His winter resort, the representatives of Mullá Muḥammad decided to leave for that place. When they arrived, they found <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> engaged in revealing a commentary on the opening Súrih of the Qur'án, entitled "The Seven Verses of Repetition." As they sat and listened to His discourse, the loftiness of the theme, the persuasive eloquence which characterised its presentation, as well as the extraordinary manner of its delivery, profoundly impressed them. Mullá Abbás, unable to contain himself, arose from his seat and, urged by an impulse he could not resist, walked back and stood still beside the door in an attitude of reverent submissiveness. The charm of the discourse to which he was listening had fascinated him. "You behold my condition," he told his companion as he stood trembling with emotion and with eyes full of tears. "I am powerless to question <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. The questions I had planned to ask Him have vanished suddenly from my memory. You are free either to proceed with your enquiry or to return alone to our teacher and inform him of the state in which I find myself. Tell him from me that Abbás can never again return to him. He can no longer forsake this threshold." Mírzá Abu'l-Qásim was likewise moved to follow the example of his companion. "I have ceased to recognise my teacher," was his reply. "This very moment, I have vowed to God to dedicate the remaining days of my life to the service of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, my true and only Master."</p>
+    <p>The news of the sudden conversion of the chosen envoys of the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> of Núr spread with bewildering rapidity throughout the district. It roused the people from their <span class="vw cat-c" data-tip="A state of tiredness and lack of energy or enthusiasm; sluggish inaction.">lethargy</span>. Ecclesiastical dignitaries, State officials, traders, and peasants all flocked to the residence of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. A considerable number among them willingly espoused His Cause. In their admiration for Him, a number of the most distinguished among them remarked: "We see how the people of Núr have risen and rallied round you. We witness on every side evidences of their exultation. If Mullá Muḥammad were also to join them, the triumph of this Faith would be completely assured." "I am come to Núr," <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> replied, "solely for the purpose of proclaiming the Cause of God. I cherish no other intention. If I were told that at a distance of a hundred leagues a seeker yearned for the Truth and was unable to meet Me, I would, gladly and unhesitatingly, hasten to his abode, and would Myself satisfy his hunger. Mullá Muḥammad, I am told, lives in Sa'adat-Ábád, a village not far distant from this place. It is My purpose to visit him and deliver to him the Message of God."</p>
+    <p>Desirous of giving effect to His words, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, accompanied by a number of His companions, proceeded immediately to that village. Mullá Muḥammad most ceremoniously received Him. "I have not come to this place," <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> observed, "to pay you an official or formal visit. My purpose is to enlighten you regarding a new and wondrous Message, divinely inspired and fulfilling the promise given to Islám. Whosoever has inclined his ear to this Message has felt its irresistible power, and has been transformed by the potency of its grace. Tell Me whatsoever perplexes your mind, or hinders you from recognising the Truth." Mullá Muḥammad <span class="vw cat-c" data-tip="In a way that expresses a low opinion; with contempt.">disparagingly</span> remarked: "I undertake no action unless I first consult the Qur'án. I have invariably, on such occasions, followed the practice of invoking the aid of God and His blessings; of opening at random His sacred Book, and of consulting the first verse of the particular page upon which my eyes chance to fall. From the nature of that verse I can judge the wisdom and the advisability of my contemplated course of action." Finding that <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was not inclined to refuse him his request, the <span class="vw cat-ae" data-tip="An Islamic scholar with authority to interpret religious law.">mujtahid</span> called for a copy of the Qur'án, opened and closed it again, refusing to reveal the nature of the verse to those who were present. All he said was this: "I have consulted the Book of God, and deem it inadvisable to proceed further with this matter." A few agreed with him; the rest, for the most part, did not fail to recognise the fear which those words implied. <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, disinclined to cause him further embarrassment, arose and, asking to be excused, bade him a cordial farewell.</p>
+  </div>
+</div>
+
+<!-- S5 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 5 — The Dervish by the Brook</h3><span class="para-ref">Paragraph 96</span></div>
+  <div class="story-summary">On a riding excursion, Bahá'u'lláh comes across a wandering dervish sitting alone by a brook, cooking his food and saying cryptic things about eating God. Bahá'u'lláh speaks to him with warmth and tenderness. Within a short time, the dervish is completely transformed. He abandons his cooking utensils, rises, and follows Bahá'u'lláh on foot — chanting a love poem he composes on the spot and dedicates to his new Beloved.</div>
+  <div class="story-text">
+    <p>One day, in the course of one of His riding excursions into the country, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, accompanied by His companions, saw, seated by the roadside, a lonely youth. His hair was dishevelled, and he wore the dress of a <span class="vw cat-e" data-tip="A member of a Muslim religious order known for a wandering, ascetic life of poverty and devotion.">dervish</span>. By the side of a brook he had kindled a fire, and was cooking his food and eating it. Approaching him, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> most lovingly enquired: "Tell Me, <span class="cn ch-dervish"><span class="ci">🎵</span> dervish</span>, what is it that you are doing?" "I am engaged in eating God," he bluntly replied. "I am cooking God and am burning Him." The unaffected simplicity of his manners and the candour of his reply pleased <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> extremely. He smiled at his remark and began to converse with him with unrestrained tenderness and freedom. Within a short space of time, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had changed him completely. Enlightened as to the true nature of God, and with a mind purged from the idle fancy of his own people, he immediately recognised the Light which that loving Stranger had so unexpectedly brought him. <span class="cn ch-dervish"><span class="ci">🎵</span> That dervish</span>, whose name was Muṣṭafá, became so <span class="vw cat-c" data-tip="Deeply in love with or captivated by something or someone.">enamoured</span> with the teachings which had been instilled into his mind that, leaving his cooking utensils behind, he straightway arose and followed <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. On foot, behind His horse, and inflamed with the fire of His love, <span class="cn ch-dervish"><span class="ci">🎵</span> he</span> chanted merrily verses of a love-song which he had composed on the spur of the moment and had dedicated to his Beloved. "Thou art the Day-Star of guidance," ran its glad refrain. "Thou art the Light of Truth. Unveil Thyself to men, O Revealer of the Truth." Although, in later years, that poem obtained wide circulation among his people, and it became known that a certain <span class="cn ch-dervish"><span class="ci">🎵</span> dervish</span>, surnamed Majdhúb, and whose name was Muṣṭafá Big-i-Sanandají, had, without premeditation, composed it in praise of his Beloved, none seemed to be aware to whom it actually referred, nor did anyone suspect, at a time when <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was still veiled from the eyes of men, that this <span class="cn ch-dervish"><span class="ci">🎵</span> dervish</span> alone had recognised His station and discovered His glory.</p>
+  </div>
+</div>
+
+<!-- S6 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 6 — The Fruit of the Journey to Núr</h3><span class="para-ref">Paragraph 97</span></div>
+  <div class="story-summary">Nabíl reflects on the extraordinary results of Bahá'u'lláh's visit — entire crowds won over, souls stirred, many willing to suffer or die for the Cause. The province of Núr — whose name literally means "light" — becomes the first in all of Persia to catch the rays of the new Revelation rising from Shíráz.</div>
+  <div class="story-text">
+    <p><span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>'s visit to Núr had produced the most far-reaching results, and had lent a remarkable impetus to the spread of the new-born Revelation. By His magnetic eloquence, by the purity of His life, by the dignity of His bearing, by the unanswerable logic of His argument, and by the many evidences of His loving-kindness, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had won the hearts of the people of Núr, had stirred their souls, and had enrolled them under the standard of the Faith. Such was the effect of words and deeds, as He went about preaching the Cause and revealing its glory to His countrymen in Núr, that the very stones and trees of that district seemed to have been quickened by the waves of spiritual power which emanated from His person. All things seemed to be endowed with a new and more abundant life, all things seemed to be proclaiming aloud: "Behold, the Beauty of God has been made manifest! Arise, for He has come in all His glory." The people of Núr, when <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> had departed from out their midst, continued to propagate the Cause and to consolidate its foundations. A number of them endured the severest afflictions for His sake; others quaffed with gladness the cup of martyrdom in His path. Mázindarán in general, and Núr in particular, were thus distinguished from the other provinces and districts of Persia, as being the first to have eagerly embraced the Divine Message. The district of Núr, literally meaning "light," which lay embedded within the mountains of Mázindarán, was the first to catch the rays of the Sun that had arisen in Shíráz, the first to proclaim to the rest of Persia, which still lay enveloped in the shadow of the vale of heedlessness, that the Day-Star of heavenly guidance had at length arisen to warm and illuminate the whole land.</p>
+  </div>
+</div>
+
+<!-- S7 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 7 — The Grand Vazír Tries to Seize the Estate</h3><span class="para-ref">Paragraphs 98–100</span></div>
+  <div class="story-summary">Ḥájí Mírzá Aqásí, the Grand Vazír of Persia, covets Bahá'u'lláh's beautiful estate at Quch-Hisar. He demands Bahá'u'lláh hand it over. Bahá'u'lláh declines gracefully — the property is shared with others. The Vazír tries fraud and force. Bahá'u'lláh outmaneuvers him by transferring the title to the Sháh's sister, who already wanted it. The furious Vazír complains to the Sháh, loses again, then summons Bahá'u'lláh and makes petty accusations about his dinner parties. Bahá'u'lláh replies with devastating calm. Though backed by all the power in Persia, the Grand Vazír loses every encounter.</div>
+  <div class="story-text">
+    <p>Ḥájí Mírzá Aqásí, the Grand <span class="cn ch-aqasi"><span class="ci">🪙</span> Vazír</span> of Muḥammad Sháh, though completely alienated from <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>'s father, showed his son every mark of consideration and favour. So great was the esteem which <span class="cn ch-aqasi"><span class="ci">🪙</span> the Ḥájí</span> professed for Him, that Mírzá Áqá Khán-i-Núrí, the I'timádu'd-Dawlih, who afterwards succeeded <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span>, felt envious. He resented the superiority which <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, as a mere youth, was accorded over him. The seeds of jealousy were, from that time, implanted in his breast. Though still a youth, and while his father is yet alive, he thought, he is given precedence in the presence of the Grand <span class="cn ch-aqasi"><span class="ci">🪙</span> Vazír</span>. What will, I wonder, happen to me when this young man shall have succeeded his father?</p>
+    <p>After the death of the <span class="cn ch-mirza-buzurg"><span class="ci">🎖️</span> Vazír</span>, <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span> continued to show the utmost consideration to <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>. He would visit Him in His home, and would address Him as though He were his own son. The sincerity of his devotion, however, was very soon put to the test. One day, as he was passing through the village of Quch-Hisar, which belonged to <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, he was so impressed by the charm and beauty of that place and the abundance of its water that he conceived the idea of becoming its owner. <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, whom he had summoned to effect the immediate purchase of that village, observed: "Had this property been exclusively mine own, I would willingly have complied with your desire. This transitory life, with all its sordid possessions, is worthy of no attachment in my eyes, how much less this small and insignificant estate. As a number of other people, both rich and poor, some of full age and some still minors, share with me the ownership of this property, I would request you to refer this matter to them, and to seek their consent." Unsatisfied with this reply, <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span> sought, through fraudulent means, to achieve his purpose. So soon as <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was informed of his evil designs, He, with the consent of all concerned, immediately transferred the title of the property to the name of the sister of Muḥammad Sháh, who had already repeatedly expressed her desire to become its owner. <span class="cn ch-aqasi"><span class="ci">🪙</span> The Ḥájí</span>, furious at this transaction, ordered that the estate should be forcibly seized, claiming that he already had purchased it from its original possessor. The representatives of <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span> were severely rebuked by the agents of the sister of the Sháh, and were requested to inform their master of the determination of that lady to assert her rights. <span class="cn ch-aqasi"><span class="ci">🪙</span> The Ḥájí</span> referred the case to Muḥammad Sháh, and complained of the unjust treatment to which he had been subjected. That very night, the Sháh's sister had acquainted him with the nature of the transaction. "Many a time," she said to her brother, "your Imperial Majesty has graciously signified your desire that I should dispose of the jewels with which I am wont to adorn myself in your presence, and with the proceeds purchase some property. I have at last succeeded in fulfilling your desire. <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span>, however, is now fully determined to seize it forcibly from me." The Sháh reassured his sister, and commanded <span class="cn ch-aqasi"><span class="ci">🪙</span> the Ḥájí</span> to forgo his claim. <span class="cn ch-aqasi"><span class="ci">🪙</span> The latter</span>, in his despair, summoned <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> to his presence and, by every artifice, strove to discredit His name. To the charges he brought against Him, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> vigorously replied, and succeeded in establishing His innocence. In his <span class="vw cat-bc" data-tip="Completely powerless; unable to take effective action.">impotent</span> rage, the Grand <span class="cn ch-aqasi"><span class="ci">🪙</span> Vazír</span> exclaimed: "What is the purpose of all this feasting and banqueting in which you seem to delight? I, who am the Prime Minister of the Sháhinsháh of Persia, never receive the number and variety of guests that crowd around your table every night. Why all this extravagance and vanity? You surely must be meditating a plot against me." "Gracious God!" <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> replied. "Is the man who, out of the abundance of his heart, shares his bread with his fellow-men, to be accused of harbouring criminal intentions?" <span class="cn ch-aqasi"><span class="ci">🪙</span> Ḥájí Mírzá Aqásí</span> was utterly confounded. He dared no reply. Though supported by the combined ecclesiastical and civil powers of Persia, he eventually found himself, in every contest he ventured against <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, completely defeated.</p>
+    <p>On a number of other occasions, <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>'s ascendancy over His opponents was likewise vindicated and recognised. These personal triumphs achieved by Him served to enhance His position, and spread abroad His fame. All classes of men marvelled at His miraculous success in emerging unscathed from the most perilous encounters. Nothing short of Divine protection, they thought, could have ensured His safety on such occasions. Not once did <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>, beset though He was by the gravest perils, submit to the arrogance, the greed, and the treachery of those around Him. In His constant association, during those days, with the highest dignitaries of the realm, whether ecclesiastical or State officials, He was never content simply to <span class="vw cat-bc" data-tip="To agree to or comply with what someone wants; to yield to pressure.">accede</span> to the views they expressed or the claims they advanced. He would, at their gatherings, fearlessly champion the cause of truth, would assert the rights of the downtrodden, defending the weak and protecting the innocent.</p>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<div class="guide-footer">
+  End of Chapter 5 Study Guide &nbsp;·&nbsp; The Dawn-Breakers Youth Study Series
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav nav-prev" href="DawnBreakers_Ch4_StudyGuide_v2.html">← Chapter 4</a>
+  <a class="chapter-nav nav-index" href="DawnBreakers_Index.html">☰ All Chapters</a>
+  <a class="chapter-nav nav-next" href="DawnBreakers_Ch6_StudyGuide_v1.html">Chapter 6 →</a>
+</div>
+</body>
+</html>

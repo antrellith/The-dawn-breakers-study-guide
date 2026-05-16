@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dawn-Breakers — Chapter 3 Study Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; font-size: 17px; line-height: 1.75; color: #1a1a1a; background: #faf8f4; padding: 0 0 60px 0; }
+  .book-header { background: linear-gradient(135deg, #0f2a1a 0%, #1a3d2b 60%, #0f2a1a 100%); color: #f5f0e8; text-align: center; padding: 48px 24px 40px; border-bottom: 4px solid #c9a84c; }
+  .book-header .series-label { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #c9a84c; margin-bottom: 10px; }
+  .book-header h1 { font-size: 2.2rem; font-weight: normal; letter-spacing: 1px; color: #f5f0e8; margin-bottom: 6px; }
+  .book-header .chapter-title { font-size: 1.1rem; color: #c9a84c; font-style: italic; margin-top: 10px; }
+  .page { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  .section-header { margin: 48px 0 20px; padding-bottom: 10px; border-bottom: 2px solid #c9a84c; display: flex; align-items: center; gap: 12px; }
+  .section-header .icon { font-size: 1.4rem; }
+  .section-header h2 { font-size: 1.3rem; font-weight: bold; color: #0f2a1a; letter-spacing: 0.5px; text-transform: uppercase; }
+  .summary-box { background: #f0ede6; border-left: 5px solid #c9a84c; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 16px 0; font-size: 16px; line-height: 1.8; color: #2a2a2a; }
+  .character-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 16px 0; }
+  .character-card { background: white; border-radius: 10px; padding: 16px 18px; border-left: 5px solid; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .character-card .char-name { font-weight: bold; font-size: 15px; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .character-card .char-desc { font-size: 14px; color: #444; line-height: 1.65; font-family: Arial, sans-serif; }
+  .vocab-legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 24px; }
+  .vocab-legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #333; font-family: Arial, sans-serif; }
+  .legend-chip { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+  .vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin: 12px 0; }
+  .vocab-entry { background: white; border-radius: 8px; padding: 12px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.07); display: flex; gap: 12px; align-items: flex-start; }
+  .vocab-chip { display: inline-block; padding: 3px 10px; border-radius: 5px; font-size: 13px; font-weight: bold; white-space: nowrap; flex-shrink: 0; font-family: Arial, sans-serif; margin-top: 1px; border: 1px solid rgba(0,0,0,0.12); }
+  .vocab-def { font-size: 14px; color: #444; line-height: 1.6; font-family: Arial, sans-serif; }
+  .story-section { margin: 40px 0; }
+  .story-section-header { background: #1a3d2b; color: white; border-radius: 8px 8px 0 0; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .story-section-header h3 { font-size: 1rem; font-weight: bold; letter-spacing: 0.3px; }
+  .story-section-header .para-ref { font-size: 12px; color: #c9a84c; white-space: nowrap; font-family: Arial, sans-serif; }
+  .story-summary { background: #e8f4ed; border-left: 4px solid #1a3d2b; padding: 14px 20px; font-size: 15px; line-height: 1.75; color: #1a3a24; font-family: Arial, sans-serif; }
+  .story-text { background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px; padding: 24px 28px; font-size: 16px; line-height: 1.9; color: #1a1a1a; }
+  .story-text p { margin-bottom: 1.4em; }
+  .story-text p:last-child { margin-bottom: 0; }
+  .cn { font-weight: 700; }
+  .ci { font-style: normal; font-size: 0.85em; margin-right: 1px; display: inline; }
+  .vw { border-radius: 3px; padding: 1px 3px; font-style: italic; }
+  .cat-a  { color: #166534; background: #DCFCE7; }
+  .cat-b  { color: #1E3A5F; background: #DBEAFE; }
+  .cat-c  { color: #92400E; background: #FEF3C7; }
+  .cat-d  { color: #7C2D12; background: #FFEDD5; }
+  .cat-e  { color: #6B21A8; background: #F3E8FF; }
+  .cat-ab { color: #1A5276; background: #D6EAF8; }
+  .cat-ac { color: #1E8449; background: #D5F5E3; }
+  .cat-ad { color: #6E2F1A; background: #FDEBD0; }
+  .cat-ae { color: #4A235A; background: #E8DAEF; }
+  .cat-bc { color: #1A3A6B; background: #D6EAF8; }
+  .cat-be { color: #212F82; background: #D7DBFF; }
+  .ch-ahmad    { color: #8B4513; }
+  .ch-kazim    { color: #7B2D8B; }
+  .ch-husayn   { color: #1565C0; }
+  .ch-bab      { color: #B8860B; }
+  .ch-bahaullah{ color: #AD1457; }
+  .ch-quddus   { color: #00838F; }
+  .ch-tahirih  { color: #6A1B9A; }
+  .ch-mulla-ali{ color: #2E7D32; }
+  .ch-ahmad-q  { color: #0277BD; }
+  .ch-abid     { color: #37474F; }
+  .ch-uncle    { color: #78909C; }
+  .ch-mhasan   { color: #0097A7; }
+  .ch-mbaqir   { color: #8E24AA; }
+  .lot-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #7a4f00;
+    background: #fde68a;
+    border: 1px solid #f0a500;
+    border-radius: 8px;
+    padding: 0px 5px;
+    margin-left: 3px;
+    vertical-align: super;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+  }
+  .ch-siyyid-husayn { color: #C0392B; }
+  .ch-mirza-hadi    { color: #0E6655; }
+  .ch-mma-qazvini   { color: #A93226; }
+  .ch-abdulmajid { color: #BF360C; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip] { position: relative; cursor: help; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip]::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 13px; font-family: Arial, sans-serif; padding: 6px 10px; border-radius: 6px; white-space: normal; width: 240px; text-align: center; line-height: 1.4; opacity: 0; pointer-events: none; transition: opacity 0.15s; z-index: 100; font-weight: normal; font-style: normal; }
+
+  /* ── Chapter Navigation ── */
+  .chapter-nav {
+    background: #1a3d2b;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .chapter-nav a, .chapter-nav .nav-placeholder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    min-width: 110px;
+  }
+  .chapter-nav .nav-prev {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+  }
+  .chapter-nav .nav-prev:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-index {
+    color: #c9a84c;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    justify-content: center;
+    min-width: 140px;
+  }
+  .chapter-nav .nav-index:hover { background: rgba(201,168,76,0.28); }
+  .chapter-nav .nav-next {
+    color: #f5f0e8;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-end;
+  }
+  .chapter-nav .nav-next:hover { background: rgba(255,255,255,0.2); }
+  .chapter-nav .nav-placeholder {
+    background: transparent;
+    color: transparent;
+    pointer-events: none;
+  }
+  [data-tip]:hover::after { opacity: 1; }
+  .guide-footer { text-align: center; margin-top: 60px; padding: 24px; border-top: 1px solid #ccc; color: #888; font-size: 13px; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="chapter-nav">
+  <a class="chapter-nav nav-prev" href="DawnBreakers_Ch2_StudyGuide_v2.html">← Chapter 2</a>
+  <a class="chapter-nav nav-index" href="DawnBreakers_Index.html">☰ All Chapters</a>
+  <a class="chapter-nav nav-next" href="DawnBreakers_Ch4_StudyGuide_v2.html">Chapter 4 →</a>
+</div>
+<div class="book-header">
+  <div class="series-label">Youth Study Guide</div>
+  <h1>The Dawn-Breakers</h1>
+  <div class="chapter-title">Chapter III: The Declaration of the Báb's Mission</div>
+</div>
+
+<div class="page">
+
+<!-- SUMMARY -->
+<div class="section-header"><span class="icon">📖</span><h2>Chapter Summary</h2></div>
+<div class="summary-box">
+  This is the pivotal chapter of the entire book — the moment everything has been building toward. Mullá Ḥusayn arrives back in Karbilá, rallies the grieving disciples, and then sets off alone on a spiritual quest. He is mysteriously drawn to Shíráz, where he meets a young, radiant stranger who invites him home. That night — May 22, 1844 — the young man declares Himself to be the Báb, the Gate of God, and reveals a stunning commentary on the Súrih of Joseph on the spot. Mullá Ḥusayn becomes the first believer. One by one, seventeen more disciples find their way to the Báb and are named Letters of the Living — His chosen apostles. The chapter also introduces the Báb's background, His childhood and character, and two of the most remarkable of His disciples: Quddús and Táhirih. It closes with the Báb sending His Letters out into the world to proclaim the new Faith.
+</div>
+
+<!-- CHARACTERS -->
+<div class="section-header"><span class="icon">👥</span><h2>Characters</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:16px;">Each character's name and icon appear in their color throughout this guide and in the story text below.</p>
+<div class="character-grid">
+
+  <div class="character-card" style="border-color:#1565C0;">
+    <div class="char-name" style="color:#1565C0;"><span>🕊️</span> Mullá Ḥusayn-i-Bushrú'í <span class="lot-badge">L1</span></div>
+    <div class="char-desc">The hero of this chapter. He returns to Karbilá, tries to wake up his fellow disciples, and then sets off alone on a spiritual search that leads him directly to the Báb. He becomes the very first person to believe in the Báb's mission, and is given the title Bábu'l-Báb — the Gate of the Gate.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#B8860B;">
+    <div class="char-name" style="color:#B8860B;"><span>🌅</span> The Báb (Siyyid 'Alí-Muḥammad)</div>
+    <div class="char-desc">The central figure of the entire book, who declares His mission in this chapter. He is a young merchant from Shíráz, descended from the Prophet Muḥammad, about 25 years old. Gentle, radiant, deeply devout, and possessing knowledge that astonishes everyone who meets Him.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#2E7D32;">
+    <div class="char-name" style="color:#2E7D32;"><span>⚔️</span> Mullá 'Alíy-i-Bastamí <span class="lot-badge">L4</span></div>
+    <div class="char-desc">One of the most learned of Siyyid Kázim's disciples, considered by many even superior to Mullá Ḥusayn. He arrives with twelve companions as predicted, becomes a believer, and is the first to carry the Báb's message publicly — paying for it with imprisonment and likely his life.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#00838F;">
+    <div class="char-name" style="color:#00838F;"><span>🔥</span> Quddús (Muḥammad-'Alí) <span class="lot-badge">L18</span></div>
+    <div class="char-desc">The last of the eighteen Letters of the Living, and in many ways the most spiritually exalted. He arrives dishevelled and travel-worn, recognises the Báb by His walk before anyone introduces them, and is chosen to accompany the Báb on His pilgrimage to Mecca. He is 22 years old and will later die a martyr.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#6A1B9A;">
+    <div class="char-name" style="color:#6A1B9A;"><span>🌸</span> Táhirih (Qurratu'l-'Ayn) <span class="lot-badge">L17</span></div>
+    <div class="char-desc">The only woman among the Letters of the Living, and one of the most remarkable figures in the book. She never meets the Báb in person — she becomes a believer through a letter and a dream. She is a brilliant scholar whose own father wishes she had been born a boy. Her name means "the Pure One."</div>
+  </div>
+
+  <div class="character-card" style="border-color:#7B2D8B;">
+    <div class="char-name" style="color:#7B2D8B;"><span>🌙</span> Siyyid Kázim-i-Rashtí</div>
+    <div class="char-desc">Has already died before this chapter begins, but his final instructions — scatter, search, find the promised One — drive the entire story. His disciples are the ones seeking the Báb throughout the chapter.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#0277BD;">
+    <div class="char-name" style="color:#0277BD;"><span>🖊️</span> Mírzá Aḥmad-i-Qazvíní</div>
+    <div class="char-desc">A narrator figure who had heard Mullá Ḥusayn describe the night of the declaration many times and passes on the detailed account to Nabíl. Most of the long story of the first meeting with the Báb comes through his testimony.</div>
+  </div>
+
+
+  <div class="character-card" style="border-color:#C0392B;">
+    <div class="char-name" style="color:#C0392B;"><span>🖋️</span> Siyyid Ḥusayn-i-Yazdí <span class="lot-badge">L7</span></div>
+    <div class="char-desc">The seventh Letter of the Living, and one of the most important figures in the later chapters of the book. He becomes the Báb's personal secretary and amanuensis — living with Him in the fortresses of Mah-Kú and Chihríq, writing down His words. He is present at the Báb's martyrdom, speaking with Him moments before the execution. He is later martyred himself in the Siyyah-Chal dungeon in Ṭihrán.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#0E6655;">
+    <div class="char-name" style="color:#0E6655;"><span>🍃</span> Mírzá Hádí <span class="lot-badge">L15</span></div>
+    <div class="char-desc">The fifteenth Letter of the Living, son of Mullá 'Abdu'l-Vahháb-i-Qazvíní. He appears briefly in later chapters and his daughter is married to the Most Great Branch, making him part of the extended family of Bahá'u'lláh.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#A93226;">
+    <div class="char-name" style="color:#A93226;"><span>💌</span> Mírzá Muḥammad-'Alíy-i-Qazvíní <span class="lot-badge">L16</span></div>
+    <div class="char-desc">The sixteenth Letter of the Living, and Táhirih's brother-in-law (her sister's husband). He plays a key role in this chapter: he is the one who carries Táhirih's sealed letter to the Báb, making her enrollment as a Letter of the Living possible. He later suffers martyrdom at the fort of Shaykh Ṭabarsí.</div>
+  </div>
+  <div class="character-card" style="border-color:#37474F;">
+    <div class="char-name" style="color:#37474F;"><span>📖</span> Shaykh Abid (Shaykhuna)</div>
+    <div class="char-desc">The Báb's childhood tutor. A pious and learned man who had studied under both Shaykh Aḥmad and Siyyid Kázim. He recognises early on that the Báb is no ordinary child and returns Him to His uncle, saying he is unworthy to teach such a student.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#78909C;">
+    <div class="char-name" style="color:#78909C;"><span>🤲</span> Ḥájí Mírzá Siyyid 'Alí (the Báb's uncle)</div>
+    <div class="char-desc">The Báb's maternal uncle, who raises Him after His father's early death. He places the Báb in school, brings Him into his merchant business, and will later become a martyr for the Faith.</div>
+  </div>
+
+  <div class="character-card" style="border-color:#0097A7;">
+    <div class="char-name" style="color:#0097A7;"><span>👬</span> Muḥammad-Ḥasan (Mullá Ḥusayn's brother) <span class="lot-badge">L2</span></div>
+    <div class="char-desc">Mullá Ḥusayn's brother, who travels with him throughout and becomes one of the Letters of the Living.</div>
+  </div>
+
+
+  <div class="character-card" style="border-color:#8E24AA;">
+    <div class="char-name" style="color:#8E24AA;"><span>🌱</span> Muḥammad-Báqir (Mullá Ḥusayn's nephew) <span class="lot-badge">L3</span></div>
+    <div class="char-desc">Mullá Ḥusayn's nephew, who travels with him and his brother throughout the journey. He handles their daily needs during the period of retirement and joins them in devotions. He becomes the third Letter of the Living.</div>
+  </div>
+  <div class="character-card" style="border-color:#BF360C;">
+    <div class="char-name" style="color:#BF360C;"><span>⚡</span> Ḥájí 'Abdu'l-Majíd ('Abdu'l-Vahháb's father)</div>
+    <div class="char-desc">The father who furiously chases down Mullá 'Alí and beats him when his son follows him out of Shíráz. He later deeply regrets his cruelty and becomes a believer through Bahá'u'lláh.</div>
+  </div>
+
+</div>
+
+<!-- VOCABULARY -->
+<div class="section-header"><span class="icon">📝</span><h2>Vocabulary</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:14px;">Each word is color-coded by category. The same color appears when the word shows up in the story text. Hover over a highlighted word to see its definition.</p>
+<div class="vocab-legend">
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DCFCE7;border-color:#166534;"></span> Spiritual / Religious</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#DBEAFE;border-color:#1E3A5F;"></span> Political / Power</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FEF3C7;border-color:#92400E;"></span> Qualities / Actions</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FFEDD5;border-color:#7C2D12;"></span> Places / Objects / Texts</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#F3E8FF;border-color:#6B21A8;"></span> Social / Religious Roles</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#D5F5E3;border-color:#1E8449;"></span> Spiritual + Quality blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#FDEBD0;border-color:#6E2F1A;"></span> Sacred Object / Place blend</div>
+  <div class="vocab-legend-item"><span class="legend-chip" style="background:#E8DAEF;border-color:#4A235A;"></span> Sacred Role blend</div>
+</div>
+<div class="vocab-grid">
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Disconsolate</span><span class="vocab-def">Deeply sad and unable to be comforted. The disciples were disconsolate after the death of Siyyid Kázim — grieving and lost without their leader.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Vigilance</span><span class="vocab-def">Careful, alert watchfulness. Mullá Ḥusayn urges the disciples to maintain "unrelaxing vigilance" in their search — meaning they must stay awake and attentive, never giving up.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Exhortation</span><span class="vocab-def">A strong, urgent appeal or instruction. Siyyid Kázim's final exhortations were his last urgent pleas to his disciples to go out and search for the promised One.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Futility</span><span class="vocab-def">The quality of being useless or having no effect. Mullá Ḥusayn recognised the "futility" of his efforts to wake up the other disciples — they simply weren't going to listen.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Retirement (spiritual)</span><span class="vocab-def">Withdrawing from society for prayer, fasting, and spiritual preparation. Mullá Ḥusayn spends forty days in "retirement" at the Masjid-i-Kúfih before setting out.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Vigil</span><span class="vocab-def">Staying awake through the night for prayer or spiritual purposes. Mullá 'Alí and his companions keep vigils — praying through the night — as they seek the Báb.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-a">Augury</span><span class="vocab-def">A sign or omen believed to foretell things to come. When the Báb quotes a verse as Mullá Ḥusayn crosses the threshold, Mullá Ḥusayn thinks it a "good augury" — a hopeful sign.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-a">Ablutions</span><span class="vocab-def">The ritual washing of hands, face, and feet that Muslims perform before prayer. The Báb personally pours the water over Mullá Ḥusayn's hands.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-d">Samovar</span><span class="vocab-def">A traditional Persian heated urn used to brew and serve tea. The Báb asks for the samovar and Himself prepares tea for Mullá Ḥusayn.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Abstruse</span><span class="vocab-def">Very difficult to understand; requiring deep knowledge to follow. The treatise Mullá Ḥusayn brings as a test contains "abstruse and hidden teachings."</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ad">Qayyúmu'l-Asmá</span><span class="vocab-def">The Báb's first major revealed work — His commentary on the Súrih of Joseph. The Báb reveals the first chapter of it on the very night of His declaration, writing at incredible speed without pausing.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Intonation</span><span class="vocab-def">The rise and fall of someone's voice as they speak or chant. Mullá Ḥusayn is mesmerised both by the content of the Báb's words and the musical quality of His intonation.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ae">Letters of the Living</span><span class="vocab-def">The title given to the Báb's first eighteen disciples — His chosen apostles sent out to carry His message to the world.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ae">Primal Point</span><span class="vocab-def">One of the Báb's titles, referring to His station as the origin or source of the new Revelation — the point from which all other truths flow.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Martyrdom</span><span class="vocab-def">Death suffered willingly because of one's religious beliefs. The book treats this as a great honour. Mullá 'Alí is described as the first martyr of the new Faith.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ae">Mujtahid</span><span class="vocab-def">A highly respected Islamic scholar with authority to interpret religious law. The religious leaders who condemn Mullá 'Alí hold this title.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-d">Farsang</span><span class="vocab-def">A Persian unit of distance, roughly equal to about 4 miles or 6 kilometres. Mullá 'Alí is barely a farsang outside Shíráz when he is overtaken by 'Abdu'l-Vahháb.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ac">Immolate</span><span class="vocab-def">To sacrifice. The Báb uses this word when grieving the death of His infant son — saying He would willingly sacrifice even Himself in the path of God.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-c">Erudition</span><span class="vocab-def">Deep, extensive learning and scholarship. Mullá 'Alí was renowned for his erudition — he had mastered the teachings of both Shaykh Aḥmad and Siyyid Kázim.</span></div>
+  <div class="vocab-entry"><span class="vocab-chip cat-ad">Surih of Joseph</span><span class="vocab-def">The chapter of the Qur'án about the Prophet Joseph — and the subject of the Báb's first commentary, the Qayyúmu'l-Asmá.</span></div>
+</div>
+
+<!-- STORY SECTIONS -->
+<div class="section-header"><span class="icon">📚</span><h2>Story Sections</h2></div>
+<p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:8px;">The exact text of each paragraph from the book is below. <strong>Character names</strong> appear in their assigned colors with icons. <strong>Vocabulary words</strong> are highlighted — hover to see the definition.</p>
+
+<!-- S1 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 1 — Mullá Ḥusayn Returns</h3><span class="para-ref">Paragraphs 48–49</span></div>
+  <div class="story-summary">Siyyid Kázim's death emboldens his enemies, but when Mullá Ḥusayn returns to Karbilá he rallies the grieving disciples. He reminds them of their master's dying wish: scatter, search, and find the promised One. Most of his fellow disciples make excuses and refuse to go. Mullá Ḥusayn leaves them to themselves.</div>
+  <div class="story-text">
+    <p>THE death of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> was the signal for renewed activity on the part of his enemies. Athirst for leadership, and emboldened by his removal and the consequent dismay of his followers, they reasserted their claims and prepared to realise their ambitions. For a time, fear and anxiety filled the hearts of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>'s faithful disciples, but with the return of <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn-i-Bushrú'í</span><span class="lot-badge">L1</span> from the highly successful mission with which he had been entrusted by his teacher, their gloom was dispelled.</p>
+    <p>It was on the first day of Muharram, in the year 1260 A.H., that <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> came back to Karbilá. He cheered and strengthened the <span class="vw cat-c" data-tip="Deeply sad and unable to be comforted.">disconsolate</span> disciples of his beloved chief, reminded them of his unfailing promise, and pleaded for unrelaxing <span class="vw cat-c" data-tip="Careful, alert watchfulness; staying attentive and awake to one's duty.">vigilance</span> and unremitting effort in their search for the concealed Beloved. Living in the close neighbourhood of the house the Siyyid had occupied, he, for three days, was engaged continually in receiving visits from a considerable number of mourners who hastened to convey to him, as the leading representative of <span class="cn ch-kazim"><span class="ci">🌙</span> the Siyyid</span>'s disciples, the expression of their distress and sorrow. He afterwards summoned a group of his most distinguished and trusted fellow-disciples and enquired about the expressed wishes and the last <span class="vw cat-c" data-tip="Strong, urgent appeals or instructions urging someone to action.">exhortations</span> of their departed leader. They told him that, repeatedly and emphatically, <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> had bidden them quit their homes, scatter far and wide, purge their hearts from every idle desire, and dedicate themselves to the quest of Him to whose advent he had so often alluded. "He told us," they said, "that the Object of our quest was now revealed. The veils that intervened between you and Him are such as only you can remove by your devoted search. Nothing short of prayerful endeavour, of purity of motive, of singleness of mind, will enable you to tear them asunder. Has not God revealed in His Book: 'Whoso maketh efforts for Us, in Our ways will We guide them'?" "Why, then," <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> observed, "have you chosen to tarry in Karbilá? Why is it that you have not dispersed, and arisen to carry out his earnest plea?" "We acknowledge our failure," was their reply; "to your greatness we all bear witness. Such is our confidence in you, that if you claim to be the promised One, we shall all readily and unquestionably submit. We herein pledge our loyalty and obedience to whatever you bid us perform." "God forbid!" exclaimed <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. "Far be it from His glory that I, who am but dust, should be compared to Him who is the Lord of Lords! Had you been conversant with the tone and language of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>, you never would have uttered such words. Your first obligation, as well as mine, is to arise and carry out, both in the spirit and in the letter, the dying message of our beloved chief." He arose instantly from his seat, and went directly to Mírzá Ḥasan-i-Gawhar, Mírzá Muḥit, and other well-known figures among the disciples of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. To each and all he fearlessly delivered the parting message of his chief, emphasised the pressing character of their duty, and urged them to arise and fulfil it. To his plea they returned evasive and unworthy answers. "Our enemies," one of them remarked, "are many and powerful. We must remain in this city and guard the vacant seat of our departed chief." Another observed: "It is incumbent upon me to stay and care for the children whom the Siyyid has left behind." <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> immediately recognised the <span class="vw cat-c" data-tip="The quality of being useless or having no effect.">futility</span> of his efforts. Realising the degree of their folly, their blindness and ingratitude, he spoke to them no more. He retired, leaving them to their idle pursuits.</p>
+  </div>
+</div>
+
+<!-- S2 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 2 — Ancient Prophecies Point to the Year Sixty</h3><span class="para-ref">Paragraphs 49–50</span></div>
+  <div class="story-summary">Nabíl pauses the story to share a series of ancient predictions — from Islamic scholars, poets, and the Imáms themselves — all pointing to the year 1260 A.H. (1844 A.D.) as the year the promised One would appear. The year has just dawned.</div>
+  <div class="story-text">
+    <p>As the year sixty, the year that witnessed the birth of the promised <span class="vw cat-a" data-tip="A new message or teaching believed to come directly from God.">Revelation</span>, had just dawned upon the world, it would not seem inappropriate, at this juncture, to digress from our theme, and to mention certain traditions of Muḥammad and of the imáms of the Faith which bear specific reference to that year. Imám Ja'far, son of Muḥammad, when questioned concerning the year in which the <span class="vw cat-a" data-tip="'He who shall arise' — the promised redeemer in Shí'ah Islam.">Qá'im</span> was to be made manifest, replied as follows: "Verily, in the year sixty His Cause shall be revealed, and His name shall be noised abroad." In the works of the learned and far-famed Muhyi'd-Dín-i-'Arabí, many references are to be found regarding both the year of the advent and the name of the promised Manifestation. Among them are the following: "The ministers and upholders of His Faith shall be of the people of Persia." "In His name, the name of the Guardian ['Alí] precedeth that of the Prophet [Muḥammad]." "The year of His Revelation is identical with half of that number which is divisible by nine [2520]." Mírzá Muḥammad-i-Akhbarí, in his poems relating to the year of the Manifestation, makes the following prediction: "In the year Ghars [the numerical value of the letters of which is 1260] the earth shall be illumined by His light, and in Gharásih [1265] the world shall be suffused with its glory. If thou livest until the year Gharasí [1270], thou shalt witness how the nations, the rulers, the peoples, and the Faith of God shall all have been renewed." In a tradition ascribed to the Imám 'Alí, the Commander of the Faithful, it is likewise recorded: "In Ghars the Tree of Divine guidance shall be planted."</p>
+  </div>
+</div>
+
+<!-- S3 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 3 — Forty Days of Prayer</h3><span class="para-ref">Paragraphs 51–54</span></div>
+  <div class="story-summary">Mullá Ḥusayn sets out with his brother and nephew. He stops at the Masjid-i-Kúfih and spends forty days fasting and praying in preparation. Another great disciple, Mullá 'Alí-i-Bastamí, arrives with twelve companions and joins him in retreat. When the forty days end, Mullá Ḥusayn travels to Búshihr and then feels irresistibly drawn north toward Shíráz.</div>
+  <div class="story-text">
+    <p><span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, having acquitted himself of the obligation he felt to urge and awaken his fellow-disciples, set out from Karbilá for Najaf. With him were <span class="cn ch-mhasan"><span class="ci">👬</span> Muḥammad-Ḥasan</span><span class="lot-badge">L2</span>, his brother, and <span class="cn ch-mbaqir"><span class="ci">🌱</span> Muḥammad-Báqir</span><span class="lot-badge">L3</span>, his nephew, both of whom had accompanied him ever since his visit to his native town of Bushrúyih, in the province of Khurásán. Arriving at the Masjid-i-Kúfih, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> decided to spend forty days in that place, where he led a life of <span class="vw cat-ac" data-tip="Withdrawing from society for prayer, fasting, and spiritual preparation.">retirement</span> and prayer. By his fasts and <span class="vw cat-ac" data-tip="Staying awake through the night for prayer or spiritual devotion.">vigils</span> he prepared himself for the holy adventure upon which he was soon to embark. In the exercise of these acts of worship, his brother alone was associated with him, while his nephew, who attended to their daily needs, observed the fasts, and in his hours of leisure joined them in their devotions.</p>
+    <p>This cloistered calm with which they were surrounded was, after a few days, unexpectedly interrupted by the arrival of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alíy-i-Bastamí</span><span class="lot-badge">L4</span>, one of the foremost disciples of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. He, together with twelve other companions, arrived at the Masjid-i-Kúfih, where he found his fellow-disciple <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> immersed in contemplation and prayer. <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> was endowed with such vast learning, and was so deeply conversant with the teachings of <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span>, that many regarded him as even superior to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. On several occasions he attempted to enquire from <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> as to his destination after the termination of the period of his <span class="vw cat-ac" data-tip="Withdrawing from society for prayer, fasting, and spiritual preparation.">retirement</span>. Every time he approached him, he found him so wrapt in his devotions that he felt it impossible to venture a question. He soon decided to retire, like him, for forty days from the society of men. All his companions followed his example with the exception of three who acted as their personal attendants.</p>
+    <p>Immediately after the completion of his forty days' <span class="vw cat-ac" data-tip="Withdrawing from society for prayer, fasting, and spiritual preparation.">retirement</span>, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, together with his two companions, departed for Najaf. He left Karbilá by night, visited on his way the shrine of Najaf, and proceeded directly to Búshihr, on the Persian Gulf. There he started on his holy quest after the Beloved of his heart's desire. There, for the first time, he inhaled the fragrance of Him who, for years, had led in that city the life of a merchant and humble citizen. There he perceived the sweet savours of holiness with which that Beloved's countless invocations had so richly impregnated the atmosphere of that city.</p>
+    <p>He could not, however, tarry longer in Búshihr. Drawn as if by a magnet which seemed to attract him irresistibly towards the north, he proceeded to Shíráz. Arriving at the gate of that city, he instructed his brother and his nephew to proceed directly to the Masjid-i-Ílkhání, and there to remain until his arrival. He expressed the hope that, God willing, he would arrive in time to join them in their evening prayer.</p>
+  </div>
+</div>
+
+<!-- S4 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 4 — A Stranger at the Gate</h3><span class="para-ref">Paragraph 55</span></div>
+  <div class="story-summary">Just outside the gates of Shíráz, Mullá Ḥusayn encounters a radiant young man wearing a green turban who greets him like a lifelong friend. The young man invites him home. Mullá Ḥusayn assumes He must be a disciple of Siyyid Kázim. He follows.</div>
+  <div class="story-text">
+    <p>On that very day, a few hours before sunset, whilst walking outside the gate of the city, his eyes fell suddenly upon a Youth of radiant countenance, who wore a green turban and who, advancing towards him, greeted him with a smile of loving welcome. <span class="cn ch-bab"><span class="ci">🌅</span> He</span> embraced <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> with tender affection as though he had been his intimate and lifelong friend. <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> thought Him at first to be a disciple of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> who, on being informed of his approach to Shíráz, had come out to welcome him.</p>
+  </div>
+</div>
+
+<!-- S5 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 5 — The Night of Declaration</h3><span class="para-ref">Paragraph 56</span></div>
+  <div class="story-summary">Inside the Báb's home, Mullá Ḥusayn is treated with extraordinary hospitality. The young Host washes his hands and feet, prepares tea, then questions him about Siyyid Kázim's description of the promised One. Mullá Ḥusayn lists the signs — and the young man declares: "Behold, all these signs are manifest in Me!" Mullá Ḥusayn presents his written test. The Báb resolves every problem in it within minutes, then takes up His pen and — without pausing once — reveals the entire first chapter of His commentary on the Súrih of Joseph. At two hours and eleven minutes past sunset, the Báb declares: "I am the Báb, the Gate of God." They eat, pray, and Mullá Ḥusayn sits spellbound until the morning call to prayer.</div>
+  <div style="background:#fff8e1;border-left:4px solid #f0a500;padding:10px 16px;font-family:Arial,sans-serif;font-size:13px;color:#5a4000;"><strong>Note:</strong> Paragraph 56 is one single, continuous paragraph in the original book. The line breaks below are for readability only — no words have been changed or rearranged.</div>
+  <div class="story-text">
+    <p><span class="cn ch-ahmad-q"><span class="ci">🖊️</span> Mírzá Aḥmad-i-Qazvíní</span>, the martyr, who on several occasions had heard <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> recount to the early believers the story of his moving and historic interview with <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, related to me the following: "I have heard <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> repeatedly and graphically describe the circumstances of that remarkable interview: 'The Youth who met me outside the gate of Shíráz overwhelmed me with expressions of affection and loving-kindness. <span class="cn ch-bab"><span class="ci">🌅</span> He</span> extended to me a warm invitation to visit His home, and there refresh myself after the fatigues of my journey. I prayed to be excused, pleading that my two companions had already arranged for my stay in that city, and were now awaiting my return. "Commit them to the care of God," was His reply; "He will surely protect and watch over them." Having spoken these words, <span class="cn ch-bab"><span class="ci">🌅</span> He</span> bade me follow Him. I was profoundly impressed by the gentle yet compelling manner in which that strange Youth spoke to me. As I followed Him, His gait, the charm of His voice, the dignity of His bearing, served to enhance my first impressions of this unexpected meeting.</p>
+    <p>'We soon found ourselves standing at the gate of a house of modest appearance. <span class="cn ch-bab"><span class="ci">🌅</span> He</span> knocked at the door, which was soon opened by an Ethiopian servant. "Enter therein in peace, secure," were His words as He crossed the threshold and motioned me to follow Him. His invitation, uttered with power and majesty, penetrated my soul. I thought it a good <span class="vw cat-a" data-tip="A sign or omen believed to foretell things to come.">augury</span> to be addressed in such words, standing as I did on the threshold of the first house I was entering in Shíráz, a city the very atmosphere of which had produced already an indescribable impression upon me. Might not my visit to this house, I thought to myself, enable me to draw nearer to the Object of my quest? Might it not hasten the termination of a period of intense longing, of strenuous search, of increasing anxiety, which such a quest involves? As I entered the house and followed my Host to His chamber, a feeling of unutterable joy invaded my being. Immediately we were seated, <span class="cn ch-bab"><span class="ci">🌅</span> He</span> ordered a ewer of water to be brought, and bade me wash away from my hands and feet the stains of travel. I pleaded permission to retire from His presence and perform my <span class="vw cat-a" data-tip="The ritual washing of hands, face, and feet that Muslims perform before prayer.">ablutions</span> in an adjoining room. He refused to grant my request, and proceeded to pour the water over my hands. He then gave me to drink of a refreshing beverage, after which He asked for the <span class="vw cat-d" data-tip="A traditional Persian heated urn used to brew and serve tea.">samovar</span> and Himself prepared the tea which He offered me.</p>
+    <p>'Overwhelmed with His acts of extreme kindness, I arose to depart. "The time for evening prayer is approaching," I ventured to observe. "I have promised my friends to join them at that hour in the Masjid-i-Ílkhání." With extreme courtesy and calm He replied: "You must surely have made the hour of your return conditional upon the will and pleasure of God. It seems that His will has decreed otherwise. You need have no fear of having broken your pledge." His dignity and self-assurance silenced me. I renewed my <span class="vw cat-a" data-tip="The ritual washing of hands, face, and feet that Muslims perform before prayer.">ablutions</span> and prepared for prayer. <span class="cn ch-bab"><span class="ci">🌅</span> He</span>, too, stood beside me and prayed. Whilst praying, I unburdened my soul, which was much oppressed, both by the mystery of this interview and the strain and stress of my search. I breathed this prayer: "I have striven with all my soul, O my God, and until now have failed to find Thy promised Messenger. I testify that Thy word faileth not, and that Thy promise is sure."</p>
+    <p>'That night, that memorable night, was the eve preceding the fifth day of Jamádiyu'l-Avval, in the year 1260 A.H. It was about an hour after sunset when my youthful Host began to converse with me. "Whom, after <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>," <span class="cn ch-bab"><span class="ci">🌅</span> He</span> asked me, "do you regard as his successor and your leader?" "At the hour of his death," I replied, "our departed teacher insistently exhorted us to forsake our homes, to scatter far and wide, in quest of the promised Beloved. I have, accordingly, journeyed to Persia, have arisen to accomplish his will, and am still engaged in my quest." "Has your teacher," <span class="cn ch-bab"><span class="ci">🌅</span> He</span> further enquired, "given you any detailed indications as to the distinguishing features of the promised One?" "Yes," I replied, "He is of a pure lineage, is of illustrious descent, and of the seed of Fátimih. As to His age, He is more than twenty and less than thirty. He is endowed with innate knowledge. He is of medium height, abstains from smoking, and is free from bodily deficiency." <span class="cn ch-bab"><span class="ci">🌅</span> He</span> paused for a while and then with vibrant voice declared: "Behold, all these signs are manifest in Me!" He then considered each of the above-mentioned signs separately, and conclusively demonstrated that each and all were applicable to His person. I was greatly surprised, and politely observed: "He whose advent we await is a Man of unsurpassed holiness, and the Cause He is to reveal, a Cause of tremendous power. Many and diverse are the requirements which He who claims to be its visible embodiment must needs fulfil. How often has <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> referred to the vastness of the knowledge of the promised One! How often did he say: 'My own knowledge is but a drop compared with that with which He has been endowed. All my attainments are but a speck of dust in the face of the immensity of His knowledge. Nay, immeasurable is the difference!'" No sooner had those words dropped from my lips than I found myself seized with fear and remorse, such as I could neither conceal nor explain.</p>
+    <p>'When I first started upon my quest, I determined to regard the two following standards as those whereby I could ascertain the truth of whosoever might claim to be the promised <span class="vw cat-a" data-tip="'He who shall arise' — the promised redeemer in Shí'ah Islam.">Qá'im</span>. The first was a treatise which I had myself composed, bearing upon the <span class="vw cat-c" data-tip="Very difficult to understand; requiring deep specialist knowledge.">abstruse</span> and hidden teachings propounded by <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. Whoever seemed to me capable of unravelling the mysterious allusions made in that treatise, to him I would next submit my second request, and would ask him to reveal, without the least hesitation or reflection, a commentary on the <span class="vw cat-ad" data-tip="The chapter of the Qur'án about the Prophet Joseph — and the subject of the Báb's first commentary.">Súrih of Joseph</span>, in a style and language entirely different from the prevailing standards of the time. I had previously requested <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>, in private, to write a commentary on that same Súrih, which he refused, saying: "This is, verily, beyond me. He, that great One, who comes after me will, unasked, reveal it for you. That commentary will constitute one of the weightiest testimonies of His truth, and one of the clearest evidences of the loftiness of His position."</p>
+    <p>'I was revolving these things in my mind, when my distinguished Host again remarked: "Observe attentively. Might not the Person intended by <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> be none other than I?" I thereupon felt impelled to present to <span class="cn ch-bab"><span class="ci">🌅</span> Him</span> a copy of the treatise which I had with me. "Will you," I asked Him, "read this book of mine and look at its pages with indulgent eyes? I pray you to overlook my weaknesses and failings." <span class="cn ch-bab"><span class="ci">🌅</span> He</span> graciously complied with my wish. He opened the book, glanced at certain passages, closed it, and began to address me. Within a few minutes He had, with characteristic vigour and charm, unravelled all its mysteries and resolved all its problems. Having to my entire satisfaction accomplished, within so short a time, the task I had expected Him to perform, He further expounded to me certain truths which could be found neither in the reported sayings of the imáms of the Faith nor in the writings of <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. These truths, which I had never heard before, seemed to be endowed with refreshing vividness and power. He then proceeded to say: "Now is the time to reveal the commentary on the <span class="vw cat-ad" data-tip="The chapter of the Qur'án about the Prophet Joseph — the subject of the Báb's first commentary.">Súrih of Joseph</span>." <span class="cn ch-bab"><span class="ci">🌅</span> He</span> took up His pen and with incredible rapidity revealed the entire Súrih of Mulk, the first chapter of His commentary on the <span class="vw cat-ad" data-tip="The chapter of the Qur'án about the Prophet Joseph.">Súrih of Joseph</span>. The overpowering effect of the manner in which He wrote was heightened by the gentle <span class="vw cat-c" data-tip="The rise and fall of someone's voice as they speak or chant.">intonation</span> of His voice which accompanied His writing. Not for one moment did He interrupt the flow of the verses which streamed from His pen. Not once did He pause till the Súrih of Mulk was finished. I sat enraptured by the magic of His voice and the sweeping force of His revelation. At last I reluctantly arose from my seat and begged leave to depart. He smilingly bade me be seated, and said: "If you leave in such a state, whoever sees you will assuredly say: 'This poor youth has lost his mind.'" At that moment the clock registered two hours and eleven minutes after sunset. That night, the eve of the fifth day of Jamádiyu'l-Avval, in the year 1260 A.H., corresponded with the eve preceding the sixty-fifth day after Naw-rúz, which was also the eve of the sixth day of Khurdád, of the year Nahang. "This night," <span class="cn ch-bab"><span class="ci">🌅</span> He</span> declared, "this very hour will, in the days to come, be celebrated as one of the greatest and most significant of all festivals. Render thanks to God for having graciously assisted you to attain your heart's desire, and for having quaffed from the sealed wine of His utterance. 'Well is it with them that attain thereunto.'"</p>
+    <p>'Sleep had departed from me that night. I was enthralled by the music of that voice which rose and fell as <span class="cn ch-bab"><span class="ci">🌅</span> He</span> chanted; now swelling forth as He revealed verses of the <span class="vw cat-ad" data-tip="The Báb's first major revealed work — His commentary on the Súrih of Joseph.">Qayyúmu'l-Asmá</span>, again acquiring ethereal, subtle harmonies as He uttered the prayers He was revealing. At the end of each invocation, He would repeat this verse: "Far from the glory of thy Lord, the All-Glorious, be that which His creatures affirm of Him! And peace be upon His Messengers! And praise be to God, the Lord of all beings!"</p>
+    <p>'He then addressed me in these words: "O thou who art the first to believe in Me! Verily I say, I am the Báb, the Gate of God, and thou art the Bábu'l-Báb, the gate of that Gate. Eighteen souls must, in the beginning, spontaneously and of their own accord, accept Me and recognise the truth of My Revelation. Unwarned and uninvited, each of these must seek independently to find Me. And when their number is complete, one of them must needs be chosen to accompany Me on My pilgrimage to Mecca and Medina. There I shall deliver the Message of God to the Sharíf of Mecca. I then shall return to Kúfih, where again, in the Masjid of that holy city, I shall manifest His Cause. It is incumbent upon you not to divulge, either to your companions or to any other soul, that which you have seen and heard. Be engaged in the Masjid-i-Ílkhání in prayer and in teaching. I, too, will there join you in congregational prayer. Beware lest your attitude towards Me betray the secret of your faith. You should continue in this occupation and maintain this attitude until our departure for Ḥijáz. Ere we depart, we shall appoint unto each of the eighteen souls his special mission, and shall send them forth to accomplish their task. We shall instruct them to teach the Word of God and to quicken the souls of men." Having spoken these words to me, <span class="cn ch-bab"><span class="ci">🌅</span> He</span> dismissed me from His presence. Accompanying me to the door of the house, <span class="cn ch-bab"><span class="ci">🌅</span> He</span> committed me to the care of God.</p>
+    <p>'This Revelation, so suddenly and impetuously thrust upon me, came as a thunderbolt which, for a time, seemed to have benumbed my faculties. I was blinded by its dazzling splendour and overwhelmed by its crushing force. Excitement, joy, awe, and wonder stirred the depths of my soul. Predominant among these emotions was a sense of gladness and strength which seemed to have transfigured me. How feeble and impotent, how dejected and timid, I had felt previously! Then I could neither write nor walk, so tremulous were my hands and feet. Now, however, the knowledge of His Revelation had galvanised my being. I felt possessed of such courage and power that were the world, all its peoples and its potentates, to rise against me, I would, alone and undaunted, withstand their onslaught. The universe seemed but a handful of dust in my grasp. I seemed to be the Voice of Gabriel personified, calling unto all mankind: "Awake, for lo! the morning Light has broken. Arise, for His Cause is made manifest. The portal of His grace is open wide; enter therein, O peoples of the world! For He who is your promised One is come!"'</p>
+  </div>
+</div>
+
+<!-- S6 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 6 — The Morning After, and Mullá 'Alí Arrives</h3><span class="para-ref">Paragraphs 57–59</span></div>
+  <div class="story-summary">Mullá Ḥusayn leaves the Báb's home in a state of overwhelming joy and power. He begins teaching at the mosque as instructed, keeping the secret. Mullá 'Alí-i-Bastamí arrives with exactly thirteen companions, just as the Báb predicted. Mullá 'Alí senses Mullá Ḥusayn is concealing something. That night Mullá 'Alí has a vision of a light leading him to his Beloved. He rushes to Mullá Ḥusayn at midnight, and together they go to the Báb's house at dawn — where the Ethiopian servant is already standing at the door expecting them.</div>
+  <div class="story-text">
+    <p>'In such a state I left His house and joined my brother and nephew. A large number of the followers of <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span>, who had heard of my arrival, had gathered in the Masjid-i-Ílkhání to meet me. Faithful to the directions of my newly found Beloved, I immediately set myself to carry out His wishes. As I began to organise my classes and perform my devotions, a vast concourse of people gathered gradually about me. Ecclesiastical dignitaries and officials of the city also came to visit me. They marvelled at the spirit which my lectures revealed, unaware that the Source whence my knowledge flowed was none other than He whose advent they, for the most part, were eagerly awaiting.'</p>
+    <p>'During those days I was, on several occasions, summoned by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> to visit Him. He would send at night-time that same Ethiopian servant to the masjid, bearing to me His most loving message of welcome. Every time I visited Him, I spent the entire night in His presence. Wakeful until the dawn, I sat at His feet fascinated by the charm of His utterance and oblivious of the world and its cares and pursuits. How rapidly those precious hours flew by! At daybreak I reluctantly withdrew from His presence. How eagerly in those days I looked forward to the approach of the evening hour! With what feelings of sadness and regret I beheld the dawning of day! In the course of one of these nightly visits, my Host addressed me in these words: "To-morrow thirteen of your companions will arrive. To each of them extend the utmost loving-kindness. Leave them not to themselves, for they have dedicated their lives to the quest of their Beloved. Pray to God that He may graciously enable them to walk securely in that path which is finer than a hair and keener than a sword. Certain ones among them will be accounted, in the sight of God, as His chosen and favoured disciples. As to others, they will tread the middle way. The fate of the rest will remain undeclared until the hour when all that is hidden shall be made manifest."'</p>
+    <p>'That same morning, at sunrise, soon after my return from the home of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alíy-i-Bastamí</span><span class="lot-badge">L4</span>, accompanied by the same number of companions as indicated to me, arrived at the Masjid-i-Ílkhání. I immediately set about to provide the means for their comfort. One night, a few days after their arrival, <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>, as the spokesman of his companions, gave vent to feelings which he could no longer repress. "You know well," he said, "how great is our confidence in you. We bear you such loyalty that if you should claim to be the promised <span class="vw cat-a" data-tip="'He who shall arise' — the promised redeemer in Shí'ah Islam.">Qá'im</span> we would all unhesitatingly submit. Obedient to your summons, we have forsaken our homes and have gone forth in search of our promised Beloved. You were the first to set us all this noble example. We have followed in your footsteps. We have determined not to relax in our efforts until we find the Object of our quest. We have followed you to this place, ready to acknowledge whomsoever you accept, in the hope of seeking the shelter of His protection and of passing successfully through the tumult and agitation that must needs signalise the last Hour. How is it that we now see you teaching the people and conducting their prayers and devotions with the utmost tranquillity? Those evidences of agitation and expectancy seem to have vanished from your countenance. Tell us, we beseech you, the reason, that we too may be delivered from our present state of suspense and doubt." "Your companions," I gently observed, "may naturally attribute my peace and composure to the ascendancy which I seem to have acquired in this city. The truth is far from that. The world, I assure you, with all its pomp and seductions, can never lure away this Ḥusayn of Bushrúyih from his Beloved. Ever since the beginning of this holy enterprise upon which I have embarked, I have vowed to seal, with my life-blood, my own destiny. For His sake I have welcomed immersion in an ocean of tribulation. I yearn not for the things of this world. I crave only the good pleasure of my Beloved. Not until I shed my blood for His name will the fire that glows within me be quenched. Please God you may live to witness that day." These words stirred the soul of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>. He at once perceived their meaning. With tearful eyes he entreated me to disclose the identity of Him who had turned my agitation into peace and converted my anxiety into certitude. "I adjure you," he pleaded, "to bestow upon me a portion of that holy draught which the Hand of mercy has given you to drink, for it will assuredly allay my thirst, and ease the pain of longing in my heart." "Beseech me not," I replied, "to grant you this favour. Let your trust be in Him, for He will surely guide your steps, and appease the tumult of your heart."'</p>
+    <p><span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> hastened to his companions and acquainted them with the nature of his conversation with <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. Ablaze with the fire which the account of that conversation had kindled in their hearts, they immediately dispersed, and, seeking the seclusion of their cells, besought, through fasting and prayer, the early removal of the veil that intervened between them and the recognition of their Beloved. They prayed while keeping their <span class="vw cat-ac" data-tip="Staying awake through the night for prayer or spiritual devotion.">vigils</span>: "O God, our God! Thee only do we worship, and to Thee do we cry for help. Guide us, we beseech Thee, on the straight Path, O Lord our God! Fulfil what Thou hast promised unto us by Thine Apostles, and put us not to shame on the Day of Resurrection. Verily, Thou wilt not break Thy promise."</p>
+    <p>On the third night of his <span class="vw cat-ac" data-tip="Withdrawing from society for prayer, fasting, and spiritual preparation.">retirement</span>, whilst wrapt in prayer, <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alíy-i-Bastamí</span><span class="lot-badge">L4</span> had a vision. There appeared before his eyes a light, and, lo! that light moved off before him. Allured by its splendour, he followed it, till at last it led him to his promised Beloved. At that very hour, in the mid-watches of the night, he arose and, exultant with joy and radiant with gladness, opened the door of his chamber and hastened to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>. He threw himself into the arms of his revered companion. <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> most lovingly embraced him and said: "Praise be to God who hath guided us hither! We had not been guided had not God guided us!"</p>
+    <p>That very morning, at break of day, <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, followed by <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>, hastened to the residence of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>. At the entrance of His house they met the faithful Ethiopian servant, who immediately recognised them and greeted them in these words: "Ere break of day, I was summoned to the presence of my Master, who instructed me to open the door of the house and to stand expectant at its threshold. 'Two guests,' He said, 'are to arrive early this morning. Extend to them in My name a warm welcome. Say to them from Me: "Enter therein in the name of God."'"</p>
+  </div>
+</div>
+
+<!-- S7 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 7 — The Eighteen Are Complete</h3><span class="para-ref">Paragraphs 60–62</span></div>
+  <div class="story-summary">One by one, each of the twelve companions finds the Báb through their own independent experience — in dreams, in prayer, in moments of contemplation. Seventeen Letters of the Living are enrolled. The Báb tells Mullá Ḥusayn one more will arrive the next day. That evening, a travel-worn youth named Quddús appears, recognises the Báb by His walk alone, and completes the sacred number of eighteen.</div>
+  <div class="story-text">
+    <p>Each of the twelve companions of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>, in his turn and by his own unaided efforts, sought and found his Beloved. Some in sleep, others in waking, a few whilst in prayer, and still others in their moments of contemplation, experienced the light of this Divine Revelation and were led to recognise the power of its glory. After the manner of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>, these, and a few others, accompanied by <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, attained the presence of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> and were declared "<span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles sent out to carry His message to the world.">Letters of the Living</span>." Seventeen Letters were gradually enrolled in the preserved Tablet of God, and were appointed as the chosen Apostles of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, the ministers of His Faith, and the diffusers of His light.</p>
+    <p>One night, in the course of His conversation with <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> spoke these words: "Seventeen Letters have thus far enlisted under the standard of the Faith of God. There remains one more to complete the number. These <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles.">Letters of the Living</span> shall arise to proclaim My Cause and to establish My Faith. To-morrow night the remaining Letter will arrive and will complete the number of My chosen disciples." The next day, in the evening hour, as <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, followed by <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, was returning to His home, there appeared a youth dishevelled and travel-stained. He approached <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, embraced him, and asked him whether he had attained his goal. <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> tried at first to calm his agitation and advised him to rest for the moment, promising that he would subsequently enlighten him. That youth, however, refused to heed his advice. Fixing his gaze upon <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, he said to <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>: "Why seek you to hide Him from me? I can recognise Him by His gait. I confidently testify that none besides Him, whether in the East or in the West, can claim to be the Truth. None other can manifest the power and majesty that radiate from His holy person." <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> marvelled at his words. He pleaded to be excused, however, and induced him to restrain his feelings until such time as he would be able to acquaint him with the truth. Leaving him, he hastened to join <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, and informed Him of his conversation with that youth. "Marvel not," observed <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, "at his strange behaviour. We have in the world of the spirit been communing with that youth. We know him already. We indeed awaited his coming. Go to him and summon him forthwith to Our presence." <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span> was instantly reminded by these words of the Báb of the following traditional utterance: "On the last Day, the Men of the Unseen shall, on the wings of the spirit, traverse the immensity of the earth, shall attain the presence of the promised <span class="vw cat-a" data-tip="'He who shall arise' — the promised redeemer in Shí'ah Islam.">Qá'im</span>, and shall seek from Him the secret that will resolve their problems and remove their perplexities."</p>
+    <p>The acceptance by <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> of the truth of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>'s Revelation completed the assigned number of His chosen disciples. <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>, whose name was Muḥammad-'Alí, was, through his mother, a direct descendant of the Imám Ḥasan, the grandson of the Prophet Muḥammad. He was born in Barfurúsh, in the province of Mázindarán. It has been reported by those who attended the lectures of <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> that in the last years of the latter's life, <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> enrolled himself as one of <span class="cn ch-kazim"><span class="ci">🌙</span> the Siyyid</span>'s disciples. He was the last to arrive, and invariably occupied the lowliest seat in the assembly. He was the first to depart upon the conclusion of every meeting. The silence he observed and the modesty of his behaviour distinguished him from the rest of his companions. <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> was often heard to remark that certain ones among his disciples, though they occupied the lowliest of seats, and observed the strictest silence, were none the less so exalted in the sight of God that he himself felt unworthy to rank among their servants. When <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> arrived in Shíráz and embraced the Faith declared by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, he was only twenty-two years of age.</p>
+  </div>
+</div>
+
+<!-- S8 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 8 — A Note on Spiritual Connection</h3><span class="para-ref">Paragraph 63</span></div>
+  <div class="story-summary">Nabíl pauses to reflect: how could Shaykh Aḥmad, Siyyid Kázim, and the early believers have known the Báb without a mystical bond of the spirit? He points to the Báb's very first revealed words, which already contained hidden references to the glory of Bahá'u'lláh — the greater Revelation yet to come.</div>
+  <div class="story-text">
+    <p>Though distant in body, these heroic souls are engaged in daily communion with their Beloved, partake of the bounty of His utterance, and share the supreme privilege of His companionship. Otherwise how could <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span> have known of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>? How could they have perceived the significance of the secret which lay hidden in Him? How could <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> Himself, how could <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>, His beloved disciple, have written in such terms, had not the mystic bond of the spirit linked their souls together? Did not <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, in the earliest days of His Mission, allude, in the opening passages of the <span class="vw cat-ad" data-tip="The Báb's first major revealed work — His commentary on the Súrih of Joseph.">Qayyúmu'l-Asmá</span>, His commentary on the <span class="vw cat-ad" data-tip="The chapter of the Qur'án about the Prophet Joseph.">Súrih of Joseph</span>, to the glory and significance of the Revelation of <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span>? Was it not His purpose, by dwelling upon the ingratitude and malice which characterised the treatment of Joseph by his brethren, to predict what <span class="cn ch-bahaullah"><span class="ci">⭐</span> Bahá'u'lláh</span> was destined to suffer at the hands of His brother and kindred?</p>
+  </div>
+</div>
+
+<!-- S9 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 9 — Who Was the Báb?</h3><span class="para-ref">Paragraphs 64–68</span></div>
+  <div class="story-summary">Nabíl introduces the Báb formally: born in Shíráz, October 20, 1819. His father died when He was an infant. He was raised by His uncle, briefly schooled under Shaykh Abid, who recognised His extraordinary nature and returned Him to His uncle. The Báb lost His infant son Aḥmad before the declaration. He spent years in Búshihr in deep devotion — rising before dawn each day to greet the sunrise, facing north toward the concealed Beloved.</div>
+  <div class="story-text">
+    <p><span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span>, whose name was Siyyid 'Alí-Muḥammad, was born in the city of Shíráz, on the first day of Muharram, in the year 1235 A.H. He belonged to a house which was renowned for its nobility and which traced its origin to Muḥammad Himself. The date of His birth confirmed the truth of the prophecy traditionally attributed to the Imám 'Alí: "I am two years younger than my Lord." Twenty-five years, four months, and four days had elapsed since the day of His birth, when He declared His Mission. In His early childhood He lost His father, Siyyid Muḥammad-Riḍá, a man who was known throughout the province of Fárs for his piety and virtue, and was held in high esteem and honour. Both His father and His mother were descendants of the Prophet, both were loved and respected by the people. He was reared by His maternal uncle, <span class="cn ch-uncle"><span class="ci">🤲</span> Ḥájí Mírzá Siyyid 'Alí</span>, a martyr to the Faith, who placed Him, while still a child, under the care of a tutor named <span class="cn ch-abid"><span class="ci">📖</span> Shaykh Abid</span>. <span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span>, though not inclined to study, submitted to His uncle's will and directions.</p>
+    <p><span class="cn ch-abid"><span class="ci">📖</span> Shaykh Abid</span>, known by his pupils as Shaykhuna, was a man of piety and learning. He had been a disciple of both <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span> and <span class="cn ch-kazim"><span class="ci">🌙</span> Siyyid Kázim</span>. "One day," he related, "I asked <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> to recite the opening words of the Qur'án: 'Bismi'lláhi'r-Rahmáni'r-Raḥím.' He hesitated, pleading that unless He were told what these words signified, He would in no wise attempt to pronounce them. I pretended not to know their meaning. 'I know what these words signify,' observed my pupil; 'by your leave, I will explain them.' He spoke with such knowledge and fluency that I was struck with amazement. He expounded the meaning of 'Alláh,' of 'Rahmán,' and 'Raḥím,' in terms such as I had neither read nor heard. The sweetness of His utterance still lingers in my memory. I felt impelled to take Him back to His uncle and to deliver into his hands the Trust he had committed to my care. I determined to tell him how unworthy I felt to teach so remarkable a child. I found His uncle alone in his office. 'I have brought Him back to you,' I said, 'and commit Him to your vigilant protection. He is not to be treated as a mere child, for in Him I can already discern evidences of that mysterious power which the Revelation of the Sáhibu'z-Zamán alone can reveal. It is incumbent upon you to surround Him with your most loving care. Keep Him in your house, for He, verily, stands in no need of teachers such as I.' <span class="cn ch-uncle"><span class="ci">🤲</span> Ḥájí Mírzá Siyyid 'Alí</span> sternly rebuked <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>. 'Have You forgotten my instructions?' he said. 'Have I not already admonished You to follow the example of Your fellow-pupils, to observe silence, and to listen attentively to every word spoken by Your teacher?' Having obtained His promise to abide faithfully by his instructions, he bade <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> return to His school. The soul of that child could not, however, be restrained by the stern admonitions of His uncle. No discipline could repress the flow of His intuitive knowledge. Day after day He continued to manifest such remarkable evidences of superhuman wisdom as I am powerless to recount." At last <span class="cn ch-uncle"><span class="ci">🤲</span> His uncle</span> was induced to take Him away from the school of <span class="cn ch-abid"><span class="ci">📖</span> Shaykh Abid</span>, and to associate Him with himself in his own profession. There, too, He revealed signs of a power and greatness that few could approach and none could rival.</p>
+    <p>The days which <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> devoted to commercial pursuits were mostly spent in Búshihr. The oppressive heat of the summer did not deter Him from devoting, each Friday, several hours to continuous worship upon the roof of His house. Though exposed to the fierce rays of the noontide sun, He, turning His heart to His Beloved, continued to commune with Him, unmindful of the intensity of the heat and oblivious of the world around Him. From early dawn till sunrise, and from midday till late in the afternoon, He dedicated His time to meditation and pious worship. Turning His gaze towards the north, in the direction of Ṭihrán, He, at every break of day, greeted, with a heart overflowing with love and joy, the rising sun, which to Him was a sign and symbol of that Day-Star of Truth that was soon to dawn upon the world. As a lover who beholds the face of his beloved, He gazed upon the rising orb with steadfastness and longing. With such transports of delight He greeted its beaming rays, that the heedless and ignorant around Him thought Him to be enamoured with the sun itself.</p>
+    <p>Some years later <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> was united in wedlock with the sister of Mírzá Siyyid Ḥasan and Mírzá Abu'l-Qásim. The child which resulted from this union, He named Aḥmad. He died in the year 1259 A.D., the year preceding the declaration of the Faith by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>. The Father did not lament his loss. He consecrated his death by words such as these: "O God, my God! Would that a thousand Ishmaels were given Me, this Abraham of Thine, that I might have offered them, each and all, as a loving sacrifice unto Thee. Not until He <span class="vw cat-ac" data-tip="To sacrifice, especially by fire; willingness to give one's life for God.">immolates</span> His own heart at Thy feet, not until His whole body falls a victim to the cruelest tyranny in Thy path, not until His breast is made a target for countless darts for Thy sake, will the tumult of His soul be stilled."</p>
+  </div>
+</div>
+
+<!-- S10 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 10 — Eyewitness Accounts of the Báb's Character</h3><span class="para-ref">Paragraph 69</span></div>
+  <div class="story-summary">Ḥájí Siyyid Javád describes meeting the Báb in Búshihr — His downcast eyes, His extreme courtesy, His serene expression. He shares the story of a merchant trust: the Báb pays a man more than he asked for because the goods had once been worth more, and refuses to take back the excess.</div>
+  <div class="story-text">
+    <p>I have heard Ḥájí Siyyid Javád-i-Karbilá'í recount the following: "Whilst journeying to India, I passed through Búshihr. As I was already acquainted with <span class="cn ch-uncle"><span class="ci">🤲</span> Ḥájí Mírzá Siyyid 'Alí</span>, I was enabled to meet <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> on several occasions. Every time I met Him, I found Him in such a state of humility and lowliness as words fail me to describe. His downcast eyes, His extreme courtesy, and the serene expression of His face made an indelible impression upon my soul. I often heard those who were closely associated with Him testify to the purity of His character, to the charm of His manners, to His self-effacement, to His high integrity, and to His extreme devotion to God. A certain man confided to His care a trust, requesting Him to dispose of it at a fixed price. When <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> sent him the value of that article, the man found that the sum which he had been offered considerably exceeded the limit which he had fixed. He immediately wrote to <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, requesting Him to explain the reason. <span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span> replied: 'What I have sent you is entirely your due. There is not a single farthing in excess of what is your right. There was a time when the trust you had delivered to Me had attained this value. Failing to sell it at that price, I now feel it My duty to offer you the whole of that sum.' However much the Báb's client entreated Him to receive back the sum in excess, <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> persisted in refusing."</p>
+    <p>"With what assiduous care He attended those gatherings at which the virtues of the Siyyidu'sh-Shuhada', the Imám Ḥusayn, were being extolled! With what attention He listened to the chanting of the eulogies! What tenderness and devotion He showed at those scenes of lamentation and prayer! Tears rained from His eyes as His trembling lips murmured words of prayer and praise. How compelling was His dignity, how tender the sentiments which His countenance inspired!"</p>
+  </div>
+</div>
+
+<!-- S11 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 11 — The Letters of the Living: The Complete List</h3><span class="para-ref">Paragraph 70</span></div>
+  <div class="story-summary">Nabíl lists all eighteen Letters of the Living by name, noting that Táhirih is the only one who never met the Báb in person.</div>
+  <div class="story-text">
+    <p>As to those whose supreme privilege it was to be enrolled by <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> in the Book of His Revelation as His chosen <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles sent out to carry His message to the world.">Letters of the Living</span>, their names are as follows:</p>
+    <ol style="margin:16px 0 16px 32px;font-size:16px;line-height:2;">
+      <li><span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn-i-Bushrú'í</span><span class="lot-badge">L1</span></li>
+      <li><span class="cn ch-mhasan"><span class="ci">👬</span> Muḥammad-Ḥasan</span><span class="lot-badge">L2</span> (his brother)</li>
+      <li><span class="cn ch-mbaqir"><span class="ci">🌱</span> Muḥammad-Báqir</span><span class="lot-badge">L3</span> (his nephew)</li>
+      <li><span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alíy-i-Bastamí</span><span class="lot-badge">L4</span></li>
+      <li>Mullá Khudá-Bakhsh-i-Quchání, later named Mullá 'Alí<span class="lot-badge">L5</span></li>
+      <li>Mullá Ḥasan-i-Bajistání<span class="lot-badge">L6</span></li>
+      <li><span class="cn ch-siyyid-husayn"><span class="ci">🖋️</span> Siyyid Ḥusayn-i-Yazdí</span><span class="lot-badge">L7</span></li>
+      <li>Mírzá Muḥammad Rawdih-Khán-i-Yazdí<span class="lot-badge">L8</span></li>
+      <li>Sa'íd-i-Hindí<span class="lot-badge">L9</span></li>
+      <li>Mullá Maḥmúd-i-Khú'í<span class="lot-badge">L10</span></li>
+      <li>Mullá Jalíl-i-Urúmí<span class="lot-badge">L11</span></li>
+      <li>Mullá Aḥmad-i-Ibdal-i-Marághi'í<span class="lot-badge">L12</span></li>
+      <li>Mullá Báqir-i-Tabrízí<span class="lot-badge">L13</span></li>
+      <li>Mullá Yúsif-i-Ardibílí<span class="lot-badge">L14</span></li>
+      <li><span class="cn ch-mirza-hadi"><span class="ci">🍃</span> Mírzá Hádí</span><span class="lot-badge">L15</span>, son of Mullá 'Abdu'l-Vahháb-i-Qazvíní</li>
+      <li><span class="cn ch-mma-qazvini"><span class="ci">💌</span> Mírzá Muḥammad-'Alíy-i-Qazvíní</span><span class="lot-badge">L16</span></li>
+      <li><span class="cn ch-tahirih"><span class="ci">🌸</span> Táhirih</span><span class="lot-badge">L17</span></li>
+      <li><span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span></li>
+    </ol>
+    <p>These all, with the single exception of <span class="cn ch-tahirih"><span class="ci">🌸</span> Táhirih</span><span class="lot-badge">L17</span>, attained the presence of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, and were personally invested by Him with the distinction of this rank.</p>
+  </div>
+</div>
+
+<!-- S12 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 12 — Who Was Táhirih?</h3><span class="para-ref">Paragraphs 71–72</span></div>
+  <div class="story-summary">Nabíl describes Táhirih — a woman of breathtaking scholarship and courage from a powerful religious family in Qazvín. She became a believer through a letter she sent and a dream in which she saw a verse that later appeared word-for-word in the Báb's revealed writings. After the gathering of Badasht, when some tried to tarnish her name, the Báb silenced them by calling her Táhirih — the Pure One.</div>
+  <div class="story-text">
+    <p>It was <span class="cn ch-tahirih"><span class="ci">🌸</span> she</span><span class="lot-badge">L17</span> who, having learned of the intended departure of her sister's husband, <span class="cn ch-mma-qazvini"><span class="ci">💌</span> Mírzá Muḥammad-'Alí</span><span class="lot-badge">L16</span>, from Qazvín, entrusted him with a sealed letter, requesting that he deliver it to that promised One whom she said he was sure to meet in the course of his journey. "Say to Him, from me," she added, "'The effulgence of Thy face flashed forth, and the rays of Thy visage arose on high. Then speak the word, "Am I not your Lord?" and "Thou art, Thou art!" we will all reply.'" <span class="cn ch-mma-qazvini"><span class="ci">💌</span> Mírzá Muḥammad-'Alí</span><span class="lot-badge">L16</span> eventually met and recognised <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> and conveyed to Him both the letter and the message of <span class="cn ch-tahirih"><span class="ci">🌸</span> Táhirih</span><span class="lot-badge">L17</span>. <span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span> forthwith declared her one of the <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles.">Letters of the Living</span>. Her father, Ḥájí Mullá Ṣáliḥ-i-Qazvíní, and his brother, Mullá Taqí, were both <span class="vw cat-ae" data-tip="Islamic scholars with authority to interpret religious law.">mujtahids</span> of great renown, were skilled in the traditions of Muslim law, and were acquainted with the writings of <span class="cn ch-ahmad"><span class="ci">☀️</span> Shaykh Aḥmad</span>. <span class="cn ch-tahirih"><span class="ci">🌸</span> She</span><span class="lot-badge">L17</span> was married to Mullá Muḥammad, son of Mullá Taqí, her uncle. After the historic gathering of Badasht, a number of those who attended were so amazed at the fearlessness and outspoken language of that heroine, that they felt it their duty to acquaint <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> with the character of her startling and unprecedented behaviour. They strove to tarnish the purity of her name. To their accusations <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> replied: "What am I to say regarding her whom the Tongue of Power and Glory has named <span class="cn ch-tahirih"><span class="ci">🌸</span> Táhirih</span><span class="lot-badge">L17</span> [the Pure One]?" These words proved sufficient to silence those who had endeavoured to undermine her position. From that time onward she was designated by the believers as <span class="cn ch-tahirih"><span class="ci">🌸</span> Táhirih</span><span class="lot-badge">L17</span>.</p>
+  </div>
+</div>
+
+<!-- S13 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 13 — The Báb Sends Mullá Ḥusayn North</h3><span class="para-ref">Paragraph 73</span></div>
+  <div class="story-summary">Rather than accompanying the Báb to Mecca as he had hoped, Mullá Ḥusayn is sent north — to Isfahán, Káshán, Ṭihrán, and Khurásán. The Báb tells him a secret is hidden in Ṭihrán that will one day turn the earth into paradise. He promises that no harm will come to Mullá Ḥusayn until his mission is fully accomplished.</div>
+  <div class="story-text">
+    <p><span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, who anticipated being the chosen companion of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> during His pilgrimage to Mecca and Medina, was, as soon as <span class="cn ch-bab"><span class="ci">🌅</span> the latter</span> decided to depart from Shíráz, summoned to the presence of his Master, who gave him the following instructions: "The days of our companionship are approaching their end. My Covenant with you is now accomplished. Gird up the loins of endeavour, and arise to diffuse My Cause. Be not dismayed at the sight of the degeneracy and perversity of this generation, for the Lord of the Covenant shall assuredly assist you. Verily, He shall surround you with His loving protection, and shall lead you from victory to victory. Even as the cloud that rains its bounty upon the earth, traverse the land from end to end, and shower upon its people the blessings which the Almighty, in His mercy, has deigned to confer upon you. In this pilgrimage upon which We are soon to embark, We have chosen <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> as Our companion. We have left you behind to face the onslaught of a fierce and relentless enemy. Rest assured, however, that a bounty unspeakably glorious shall be conferred upon you. Follow the course of your journey towards the north, and visit on your way Isfahán, Káshán, Qum, and Ṭihrán. Beseech almighty Providence that He may graciously enable you to attain, in that capital, the seat of true sovereignty, and to enter the mansion of the Beloved. A secret lies hidden in that city. When made manifest, it shall turn the earth into paradise. My hope is that you may partake of its grace and recognise its splendour. From Ṭihrán proceed to Khurásán, and there proclaim anew the Call. From thence return to Najaf and Karbilá, and there await the summons of your Lord. Be assured that the high mission for which you have been created will, in its entirety, be accomplished by you. Until you have consummated your work, if all the darts of an unbelieving world be directed against you, they will be powerless to hurt a single hair of your head. All things are imprisoned within His mighty grasp. He, verily, is the Almighty, the All-Subduing."</p>
+  </div>
+</div>
+
+<!-- S14 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 14 — Mullá 'Alí Is Sent to Najaf — and Beaten on the Road</h3><span class="para-ref">Paragraphs 74–76</span></div>
+  <div class="story-summary">Mullá 'Alí-i-Bastamí is sent to Najaf and Karbilá, warned of severe trials ahead. Barely a farsang outside Shíráz, he is overtaken by a young man named 'Abdu'l-Vahháb who insists on following him. His furious father tracks them down and beats Mullá 'Alí savagely. Mullá 'Alí endures it with extraordinary calm. The father later deeply regrets his cruelty and becomes a believer through Bahá'u'lláh.</div>
+  <div class="story-text">
+    <p><span class="cn ch-bab"><span class="ci">🌅</span> The Báb</span> then summoned to His presence <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alíy-i-Bastamí</span><span class="lot-badge">L4</span>, and addressed to him words of cheer and loving-kindness. He instructed him to proceed directly to Najaf and Karbilá, alluded to the severe trials and afflictions that would befall him, and enjoined him to be steadfast till the end. "Your faith," He told him, "must be immovable as the rock, must weather every storm and survive every calamity. Suffer not the denunciations of the foolish and the calumnies of the clergy to afflict you, or to turn you from your purpose. For you are called to partake of the celestial banquet prepared for you in the immortal Realm. You are the first to leave the House of God, and to suffer for His sake. If you be slain in His path, remember that great will be your reward, and goodly the gift which will be bestowed upon you."</p>
+    <p>No sooner were these words uttered than <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> arose from his seat and set out to prosecute his mission. At about a <span class="vw cat-d" data-tip="A Persian unit of distance, roughly equal to about 4 miles or 6 kilometres.">farsang</span>'s distance from Shíráz he was overtaken by a youth who, flushed with excitement, impatiently asked to speak to him. His name was 'Abdu'l-Vahháb. "I beseech you," he tearfully entreated <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>, "to allow me to accompany you on your journey. Perplexities oppress my heart; I pray you to guide my steps in the way of Truth. Last night, in my dream, I heard the crier announce in the market-street of Shíráz the appearance of the Imám 'Alí, the Commander of the Faithful." <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> tried to appease his troubled heart and to persuade him to return to his shop and resume his daily work. "Your association with me," he urged, "would involve me in difficulties. Return to Shíráz and rest assured, for you are accounted of the people of salvation." The words of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> proved of no avail. The more he insisted upon the return of 'Abdu'l-Vahháb, the louder grew his lamentation and weeping. <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> finally felt compelled to comply with his wish, resigning himself to the will of God.</p>
+    <p><span class="cn ch-abdulmajid"><span class="ci">⚡</span> Ḥájí 'Abdu'l-Majíd</span>, the father of 'Abdu'l-Vahháb, has often been heard to recount, with eyes filled with tears, this story: "How deeply," he said, "I regret the deed I committed. Pray that God may grant me the remission of my sin. Immediately I heard that my son 'Abdu'l-Vahháb had forsaken his shop and left the city, I ran out in the direction of the Kazirán gate to overtake him. Armed with a club with which I intended to beat him, I enquired as to the road he had taken. I continued my search until I reached them. Seized with a savage fury, I inflicted upon <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> unspeakable injuries. To the strokes that fell heavily upon him, he, with extraordinary serenity, returned this answer: 'Stay your hand, O <span class="cn ch-abdulmajid"><span class="ci">⚡</span> 'Abdu'l-Majíd</span>, for the eye of God is observing you. I take Him as my witness, that I am in no wise responsible for the conduct of your son. I mind not the tortures you inflict upon me, for I stand prepared for the most grievous afflictions in the path I have chosen to follow. Your injuries, compared to what is destined to befall me in future, are as a drop compared to the ocean. Verily, I say, you shall survive me, and will come to recognise my innocence. Great will then be your remorse, and deep your sorrow.' Scorning his remarks, and heedless of his appeal, I continued to beat him until I was exhausted. Silently and heroically he endured this most undeserved chastisement at my hands. Finally, I ordered my son to follow me, and left <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> to himself. On our way back to Shíráz, my son related to me the dream he had dreamt. A feeling of profound regret gradually seized me. The blamelessness of <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> was vindicated in my eyes, and the memory of my cruelty to him continued long to oppress my soul."</p>
+  </div>
+</div>
+
+<!-- S15 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 15 — Mullá 'Alí on Trial in Najaf and Baghdad</h3><span class="para-ref">Paragraphs 77–78</span></div>
+  <div class="story-summary">Mullá 'Alí arrives in Najaf and boldly announces the Báb's mission before one of the most powerful religious leaders in Shí'ah Islam. He is immediately declared a heretic, bound in chains, and handed over to Ottoman authorities. A sympathetic merchant tries to help him but fails. Mullá 'Alí is deported toward Constantinople — and his fate remains unknown. He is honoured as the first martyr of the new Faith.</div>
+  <div class="story-text">
+    <p>This episode marks the first affliction which befell a disciple of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> after the declaration of His mission. <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> realised from this experience how steep and thorny was the path leading to his eventual attainment of the promise given him by his Master. Wholly resigned to His will, and prepared to shed his life-blood for His Cause, he resumed his journey until he arrived at Najaf. In the presence of Shaykh Muḥammad-Ḥasan, one of the most celebrated <span class="vw cat-ae" data-tip="Islamic scholars with authority to interpret religious law.">mujtahids</span> of shí'ah Islám, and in the face of a distinguished company of his disciples, <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> announced fearlessly the manifestation of <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span>, the Gate whose advent they were eagerly awaiting. "His proof," he declared, "is His Word; His testimony, none other than the testimony with which Islám seeks to vindicate its truth. From the pen of this unschooled Háshimite Youth of Persia there have streamed, within the space of forty-eight hours, as great a number of verses, of prayers, of homilies, and scientific treatises, as would equal in volume the whole of the Qur'án, which it took Muḥammad, the Prophet of God, twenty-three years to reveal!" That proud and fanatic leader, instead of welcoming, in an age of darkness and prejudice, these life-giving evidences of a new-born Revelation, forthwith pronounced <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> a heretic and expelled him from the assembly. His disciples and followers, even the Shaykhís, who already testified to <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span>'s piety, sincerity, and learning, endorsed, unhesitatingly, the judgment against him. They eventually delivered him, his hands bound in chains, to an official of the Ottoman government, arraigning him as a wrecker of Islám, a calumniator of the Prophet, an instigator of mischief, a disgrace to the Faith, and worthy of the penalty of death. He was taken to Baghdád under the escort of government officials, and was cast into prison by the governor of that city.</p>
+    <p>A few days later, he was deported to Constantinople. Whatever his end, <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> had by his life and death earned the immortal distinction of having been the first sufferer in the path of this new Faith of God, the first to have laid down his life as an offering on the Altar of Sacrifice.</p>
+  </div>
+</div>
+
+<!-- S16 -->
+<div class="story-section">
+  <div class="story-section-header"><h3>Section 16 — The Farewell Address to the Letters of the Living</h3><span class="para-ref">Paragraphs 79–81</span></div>
+  <div class="story-summary">The Báb gathers all His Letters and delivers a soaring farewell address — urging them to be pure, detached, and fearless. He reminds them of how Abraham, Moses, Jesus, and Muḥammad each overcame seemingly impossible odds through faith. He sends them out, fourteen at dawn, each to their own native province. His final words to Mullá Ḥusayn: whoever loves you, loves God.</div>
+  <div class="story-text">
+    <p>Having sent forth <span class="cn ch-mulla-ali"><span class="ci">⚔️</span> Mullá 'Alí</span><span class="lot-badge">L4</span> on his mission, <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> summoned to His presence the remaining <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles.">Letters of the Living</span>, and to each severally He gave a special command and appointed a special task. He addressed to them these parting words: "O My beloved friends! You are the bearers of the name of God in this Day. You have been chosen as the repositories of His mystery. It behoves each one of you to manifest the attributes of God, and to exemplify by your deeds and words the signs of His righteousness, His power and glory. The very members of your body must bear witness to the loftiness of your purpose, the integrity of your life, the reality of your faith, and the exalted character of your devotion. For verily I say, this is the Day spoken of by God in His Book: 'On that day will We set a seal upon their mouths yet shall their hands speak unto Us, and their feet shall bear witness to that which they shall have done.' Ponder the words of Jesus addressed to His disciples, as He sent them forth to propagate the Cause of God. In words such as these, He bade them arise and fulfil their mission: 'Ye are even as the fire which in the darkness of the night has been kindled upon the mountain-top. Let your light shine before the eyes of men. Such must be the purity of your character and the degree of your renunciation, that the people of the earth may through you recognise and be drawn closer to the heavenly Father who is the Source of purity and grace. For none has seen the Father who is in heaven. You who are His spiritual children must by your deeds exemplify His virtues, and witness to His glory. You are the salt of the earth, but if the salt have lost its savour, wherewith shall it be salted? Such must be the degree of your detachment, that into whatever city you enter to proclaim and teach the Cause of God, you should in no wise expect either meat or reward from its people. Nay, when you depart out of that city, you should shake the dust from off your feet. As you have entered it pure and undefiled, so must you depart from that city. For verily I say, the heavenly Father is ever with you and keeps watch over you. If you be faithful to Him, He will assuredly deliver into your hands all the treasures of the earth, and will exalt you above all the rulers and kings of the world.' O My Letters! Verily I say, immensely exalted is this Day above the days of the Apostles of old. Nay, immeasurable is the difference! You are the witnesses of the Dawn of the promised Day of God. You are the partakers of the mystic chalice of His Revelation. Gird up the loins of endeavour, and be mindful of the words of God as revealed in His Book: 'Lo, the Lord thy God is come, and with Him is the company of His angels arrayed before Him!' Purge your hearts of worldly desires, and let angelic virtues be your adorning. Scatter throughout the length and breadth of this land, and, with steadfast feet and sanctified hearts, prepare the way for His coming. Heed not your weaknesses and frailty; fix your gaze upon the invincible power of the Lord, your God, the Almighty. Has He not, in past days, caused Abraham, in spite of His seeming helplessness, to triumph over the forces of Nimrod? Has He not enabled Moses, whose staff was His only companion, to vanquish Pharaoh and his hosts? Has He not established the ascendancy of Jesus, poor and lowly as He was in the eyes of men, over the combined forces of the Jewish people? Has He not subjected the barbarous and militant tribes of Arabia to the holy and transforming discipline of Muḥammad, His Prophet? Arise in His name, put your trust wholly in Him, and be assured of ultimate victory."</p>
+    <p>With such words <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> quickened the faith of His disciples and launched them upon their mission. To each He assigned his own native province as the field of his labours. He directed them each and all to refrain from specific references to His own name and person. He instructed them to raise the call that the Gate to the Promised One has been opened, that His proof is irrefutable, and that His testimony is complete. With these instructions He dismissed them from His presence and committed them to the care of God. Of these <span class="vw cat-ae" data-tip="The Báb's first eighteen disciples — His chosen apostles.">Letters of the Living</span>, whom He thus addressed, there remained with Him in Shíráz <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, the first of these Letters, and <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span>, the last. The rest, fourteen in number, set out, at the hour of dawn, from Shíráz, each resolved to carry out, in its entirety, the task with which he had been entrusted.</p>
+    <p>To <span class="cn ch-husayn"><span class="ci">🕊️</span> Mullá Ḥusayn</span><span class="lot-badge">L1</span>, as the hour of his departure approached, <span class="cn ch-bab"><span class="ci">🌅</span> the Báb</span> addressed these words: "Grieve not that you have not been chosen to accompany Me on My pilgrimage to Ḥijáz. I shall, instead, direct your steps to that city which enshrines a Mystery of such transcendent holiness as neither Ḥijáz nor Shíráz can hope to rival. My hope is that you may, by the aid of God, be enabled to remove the veils from the eyes of the wayward and to cleanse the minds of the malevolent. Visit, on your way, Isfahán, Káshán, Ṭihrán, and Khurásán. Proceed thence to 'Iráq, and there await the summons of your Lord, who will keep watch over you and will direct you to whatsoever is His will and desire. As to Myself, I shall, accompanied by <span class="cn ch-quddus"><span class="ci">🔥</span> Quddús</span><span class="lot-badge">L18</span> and My Ethiopian servant, proceed on My pilgrimage to Ḥijáz. The hosts of the invisible Kingdom, be assured, will sustain and reinforce your efforts. The essence of power is now dwelling in you, and the company of His chosen angels revolves around you. His almighty arms will surround you, and His unfailing Spirit will ever continue to guide your steps. He that loves you, loves God; and whoever opposes you, has opposed God. Whoso befriends you, him will God befriend; and whoso rejects you, him will God reject."</p>
+  </div>
+</div>
+
+</div><!-- /page -->
+
+<div class="guide-footer">
+  End of Chapter 3 Study Guide &nbsp;·&nbsp; The Dawn-Breakers Youth Study Series
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav nav-prev" href="DawnBreakers_Ch2_StudyGuide_v2.html">← Chapter 2</a>
+  <a class="chapter-nav nav-index" href="DawnBreakers_Index.html">☰ All Chapters</a>
+  <a class="chapter-nav nav-next" href="DawnBreakers_Ch4_StudyGuide_v2.html">Chapter 4 →</a>
+</div>
+</body>
+</html>
